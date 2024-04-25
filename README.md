@@ -1,2 +1,2 @@
-# VERITAL-FR
-VERITAL website 
+# Verital
+verital website 
