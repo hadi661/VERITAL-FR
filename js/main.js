@@ -72,9 +72,9 @@
   /*---------------------
     Venobox
   --------------------- */
-  var veno_box = $('.venobox');
-  veno_box.venobox();
-
+  new VenoBox({
+    selector: '.venobox'
+  });
   /*----------------------------
   Page Scroll
   ------------------------------ */
