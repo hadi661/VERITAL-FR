@@ -72,9 +72,8 @@
   /*---------------------
     Venobox
   --------------------- */
-  new VenoBox({
-    selector: '.venobox'
-  });
+  
+
   /*----------------------------
   Page Scroll
   ------------------------------ */
@@ -123,24 +122,42 @@
   /*---------------------
    Testimonial carousel
   ---------------------*/
-  var test_carousel = $('.testimonial-carousel');
-  test_carousel.owlCarousel({
-    loop: true,
-    nav: false,
-    dots: true,
-    autoplay: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 1
-      },
-      1000: {
-        items: 1
-      }
-    }
-  });
+  // Array of testimonies
+var testimonies = [
+  "Sarah: I can't believe how much this product has changed my life!",
+  "John: This is the best investment I've ever made.",
+  "Emily: I've never seen results like this before!",
+  "David: Absolutely incredible. I'm recommending it to everyone I know.",
+  "Rachel: Wow! Just wow. I'm blown away by the difference it's made.",
+  "Michael: This exceeded all my expectations. I'm beyond impressed.",
+  "Jessica: Life-changing. That's the only way to describe it.",
+  "Alex: Worth every penny. I wish I'd found it sooner.",
+  "Lisa: I'm amazed at how quickly I saw results.",
+  "Daniel: I can't stop telling people about how great this is.",
+  "Michelle: I've tried so many products, but nothing compares to this.",
+  "Kevin: I'm a skeptic by nature, but this blew me away.",
+  "Amanda: My only regret is not trying it sooner.",
+  "Mark: I feel like a whole new person.",
+  "Hannah: I'll never go back to my old way of doing things.",
+  "Sam: It's like it was made just for me.",
+  "Taylor: 10/10"
+];
+
+// Function to display testimonies in a loop
+function displayTestimonies() {
+  var testimonialLoop = document.querySelector('.testimonial-loop');
+  var index = 0;
+
+  // Display testimonies in a loop
+  setInterval(function() {
+    testimonialLoop.innerHTML = "<div class='testimonial'>" + testimonies[index] + "</div>";
+    index = (index + 1) % testimonies.length;
+  }, 8000); // Change the duration (in milliseconds) to control the speed of testimonies rotation
+}
+
+// Call the function to start displaying testimonies
+displayTestimonies();
+
   /*----------------------------
    isotope active
   ------------------------------ */

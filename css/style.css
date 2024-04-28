@@ -276,7 +276,7 @@ div#preloader {
 
 .main-menu ul.navbar-nav li a {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 500;
   padding: 24px 0px;
@@ -299,11 +299,11 @@ div#preloader {
 }
 
 .main-menu ul.navbar-nav li.active a:focus {
-  color: #fff;
+  color: rgb(0, 193, 218)
 }
 
 .main-menu ul.navbar-nav li.active a {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  background: rgba(189, 10, 10, 0) none repeat scroll 0 0;
   color: #fff;
   position: relative;
 }
@@ -363,16 +363,13 @@ div#preloader {
 .top-right.text-right li a {
   color: #fff;
 }
-
-
-
 /*--------------------------------*/
 
 /* 2.1. Stick menu
 /*--------------------------------*/
 
 .header-area.stick {
-  background-color: rgb(34, 95, 119);
+  background-color: rgb(35, 98, 122);
   height: 70px;
   position: fixed;
   top: 0;
@@ -422,7 +419,7 @@ div#preloader {
 }
 
 .stick .main-menu ul.navbar-nav li.active a {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.055) none repeat scroll 0 0;
   color: #fff;
   position: relative;
 }
@@ -454,13 +451,87 @@ div#preloader {
 }
 
 .stick .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color:  rgb(35, 98, 122);
   width: 30px;
   height: 2px;
 }
 
 .stick .navbar-default .navbar-toggle {
   padding: 10px 0px;
+}
+/* Dropdown menu styles */
+.header-area .navbar-nav .dropdown-menu {
+  background-color: rgba(35, 98, 122, 0.9); /* Background color */
+  border: none; /* Remove border */
+}
+
+.header-area .navbar-nav .dropdown-menu li a {
+  color: #fff; /* Text color */
+  padding: 15px 20px; /* Adjust padding as needed */
+  font-size: 15px; /* Adjust font size */
+}
+
+.header-area .navbar-nav .dropdown-menu li a:hover {
+  background-color: rgba(0, 193, 218, 0.9); /* Hover background color */
+}
+
+.header-area .navbar-nav .dropdown-menu .dropdown-submenu {
+  position: relative;
+}
+
+.header-area .navbar-nav .dropdown-menu .dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.header-area .navbar-nav .dropdown-menu .dropdown-submenu:hover > a {
+  background-color: rgba(0, 193, 218, 0.9); /* Hover background color */
+}
+
+.header-area .navbar-nav .dropdown-menu .dropdown-submenu:hover > a,
+.header-area .navbar-nav .dropdown-menu .dropdown-submenu:hover > a:hover {
+  color: #fff; /* Hover text color */
+}
+/* Updated styles for responsiveness */
+
+.img-fixed {
+  position: absolute;
+  top: 0px;
+  left:0px;
+  /* Optionally, you can set a specific width and height */
+  width: 200px; /* Adjust to your desired width */
+  height: auto; /* Adjust to maintain aspect ratio */
+}
+/* Default image */
+/* Default image */
+.logo-image {
+  max-height: 65px;
+  width: auto; /* Allow the image to adjust its width */
+  height: auto; /* Allow the image to adjust its height */
+  display: block; /* Ensure the image is block-level */
+  margin: auto; /* Center the image horizontally */
+}
+
+/* Media query for screen width less than 768px (phone screens) */
+@media (max-width: 767px) {
+  .logo-image {
+      content: url('../img/logo.png');
+  }
+}
+
+/* Media query for screen width between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo-image {
+      content: url('../img/logo-1.png');
+  }
+}
+
+/* Media query for screen width greater than or equal to 992px */
+@media (min-width: 992px) {
+  .logo-image {
+      content: url('../img/logo.png');
+  }
 }
 
 /*------------------------------
@@ -681,7 +752,7 @@ div#preloader {
 }
 
 .test-overly {
-  background: rgba(0, 0, 0, 0.80);
+  background: rgba(6, 24, 24, 0.644);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1040,119 +1111,40 @@ div#preloader {
 /*----------------------------------------
  12.Testimonial Area Css
 ----------------------------------------*/
-
-.testimonials-area {
-  background: rgba(0, 0, 0, 0) url("../img/background/slider1.jpg") no-repeat fixed center top / cover;
-  height: auto;
-  width: 100%;
-}
-
-.testi-inner {
-  position: relative;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
-
-.testi-overly {
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.quate {
-  border: 1px dotted #fff;
-  border-radius: 50%;
+/* CSS style for testimonies */
+.testimonial {
   color: #fff;
-  display: inline-block;
-  font-size: 24px;
-  height: 70px;
-  line-height: 70px;
-  width: 70px;
-}
-
-.quate:hover {
-  color: #fff;
-}
-
-.testi-img img {
-  border: 1px dotted rgba(0, 0, 0, 0.05);
-  border-radius: 2px;
-  height: 80px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(4, 26, 24, 0.397);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
   margin: 0 auto;
-  padding: 5px;
-  transition: background 0.6s ease-out 0s;
-  width: 80px !important;
 }
 
-.testi-text p {
-  color: #fff;
-  font-size: 16px;
-  line-height: 1.5em;
-  margin: 20px 0;
-  letter-spacing: 1px;
-}
-
-.testi-text h6 {
-  color: #fff;
-  font-size: 20px;
-}
-
-.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot>span {
-  background: #fff none repeat scroll 0 0;
-  display: inline-block;
-  height: 8px;
-  width: 8px;
-  -moz-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  -ms-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
-  bottom: -30px;
-  display: block;
-  left: 50%;
-  margin-left: -20px;
+.testimonial:before,
+.testimonial:after {
+  content: '\201C'; /* Left and right quotes */
+  font-size: 30px;
+  color: #3EC1D5; /* Accent color */
   position: absolute;
 }
 
-.testimonial-content {
-  margin-bottom: 15px;
+.testimonial:before {
+  top: -10px;
+  left: 10px;
 }
 
-.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot {
-  display: inline-block;
-  margin: 0 3px;
+.testimonial:after {
+  bottom: -10px;
+  right: 10px;
 }
-
-.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
-  background: #3EC1D5;
+.testimonial-heading h2 {
+  color: #fff; /* Set text color to white */
 }
-
-.testi-text.text-center>h6 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.guest-rev {
-  color: #ddd;
-  font-size: 16px;
-}
-
-.guest-rev>a {
-  color: #3EC1D5;
-  font-size: 14px;
-}
-
 /*--------------------------------*/
 
 /*  13.Blog Area
