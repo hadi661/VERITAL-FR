@@ -252,7 +252,50 @@ div#preloader {
 
 /*  2. Header top Area
 /*--------------------------------*/
-
+.ticket {
+  position: fixed;
+  top: 15%;
+  left: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+.ticket img {
+  width: auto; /* Adjust size as needed */
+  height: auto;
+  display: flex;
+}
+.ticket:hover {
+  transform: scale(1.1); /* Scale up the ticket on hover */
+}
+.ticket .details {
+  display: none;
+  background-color: #64c7c7c0;
+  border: 2px sorgb(6, 108, 126)#000;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  position: absolute;
+  left: calc(100% + 10px); /* Position the details next to the ticket */
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ticket:hover .details {
+  display: block; /* Display details on hover */
+}
+/* Add hover effect */
+.ticket:hover .details {
+  display: block;
+  opacity: 1;
+}
+  /* Media query to hide ticket on small screens */
+  @media screen and (max-width: 768px) {
+    .ticket {
+      display: none;
+    }
+  }
+/* this is a ticket */
 .header-area {
   position: absolute;
   top: 0;
