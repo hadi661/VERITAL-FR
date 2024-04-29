@@ -123,25 +123,16 @@
    Testimonial carousel
   ---------------------*/
   // Array of testimonies
-var testimonies = [
-  "Sarah: I can't believe how much this product has changed my life!",
-  "John: This is the best investment I've ever made.",
-  "Emily: I've never seen results like this before!",
-  "David: Absolutely incredible. I'm recommending it to everyone I know.",
-  "Rachel: Wow! Just wow. I'm blown away by the difference it's made.",
-  "Michael: This exceeded all my expectations. I'm beyond impressed.",
-  "Jessica: Life-changing. That's the only way to describe it.",
-  "Alex: Worth every penny. I wish I'd found it sooner.",
-  "Lisa: I'm amazed at how quickly I saw results.",
-  "Daniel: I can't stop telling people about how great this is.",
-  "Michelle: I've tried so many products, but nothing compares to this.",
-  "Kevin: I'm a skeptic by nature, but this blew me away.",
-  "Amanda: My only regret is not trying it sooner.",
-  "Mark: I feel like a whole new person.",
-  "Hannah: I'll never go back to my old way of doing things.",
-  "Sam: It's like it was made just for me.",
-  "Taylor: 10/10"
-];
+  var testimonies = [
+    "Philippe Durand: VERITAL a été un partenaire essentiel dans l'optimisation de nos opérations. Leur expertise technique et leur engagement envers la qualité ont considérablement amélioré notre efficacité et notre conformité aux normes.",
+    "Nadia Belkacem: Je suis impressionnée par le professionnalisme et l'engagement de VERITAL envers la satisfaction du client. Leur équipe a été très réactive et a toujours répondu à nos besoins de manière efficace et professionnelle.",
+    "Youssef Hamdi: Travailler avec VERITAL a été une expérience très enrichissante. Leur approche collaborative et leur volonté de comprendre nos besoins spécifiques ont été très appréciées. Je recommande vivement leurs services.",
+    "Amina Khaldi: VERITAL a dépassé toutes nos attentes en matière de contrôle et de qualité. Leur équipe compétente et leur souci du détail ont fait toute la différence dans la réussite de nos projets. Nous sommes extrêmement satisfaits de leur travail.",
+    "Omar Bencherif: Je suis reconnaissant envers VERITAL pour leur assistance précieuse dans la réalisation de nos objectifs de conformité et de sécurité. Leur expertise et leur engagement envers l'excellence ont été un véritable atout pour notre entreprise.",
+    "Sophia Meziani: VERITAL a été un partenaire de confiance dans notre parcours vers l'amélioration continue. Leur approche proactive et leur volonté d'aller au-delà des attentes ont été essentielles pour garantir la qualité et la conformité de nos produits.",
+    "Karim Boudjellal: Je recommande vivement les services de VERITAL à toute entreprise cherchant des solutions de contrôle de qualité fiables et efficaces. Leur équipe compétente et leur engagement envers l'excellence en font un partenaire précieux dans notre secteur d'activité."
+  ];
+  
 
 // Function to display testimonies in a loop
 function displayTestimonies() {
