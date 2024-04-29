@@ -1156,12 +1156,12 @@ div#preloader {
 ----------------------------------------*/
 /* CSS style for testimonies */
 .testimonial {
-  color: #fff;
+  color: #f2f7f8;
   font-size: 18px;
   text-align: center;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: rgba(4, 26, 24, 0.397);
+  background-color: rgba(4, 26, 24, 0.808);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   max-width: 80%;
@@ -1186,7 +1186,7 @@ div#preloader {
   right: 10px;
 }
 .testimonial-heading h2 {
-  color: #fff; /* Set text color to white */
+  color:rgba(4, 26, 24, 0.808); /* Set text color to white */
 }
 /*--------------------------------*/
 
