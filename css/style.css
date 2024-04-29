@@ -1269,22 +1269,35 @@ div#preloader {
 .slider-container {
   overflow: hidden;
 }
-
+.slider-container1 {
+  overflow: hidden;
+}
 .slider {
   display: flex;
-  animation: slide 20s linear ease-in infinite; /* Adjust timing as needed */
+  animation: slide 50s linear ease-in infinite ; /* Adjust timing as needed */
 }
+.slider1 {
+  display: flex;
+  animation: slide 80s linear ease-in infinite ; /* Adjust timing as needed */
+}
+
 
 .slide {
   display: flex; /* Make the container flexible */
   width: auto; /* Set the width to auto to accommodate all images */
   animation: slide 50s linear infinite; /* Same animation as .slider */
 }
+.slide1 {
+  display: flex; /* Make the container flexible */
+  width: auto; /* Set the width to auto to accommodate all images */
+  animation: slide 80s linear infinite; /* Same animation as .slider */
+}
 
 .slide img {
   flex-shrink: 2;
   padding: 0 20px; /* Adjust padding as needed */
 }
+
 
 @keyframes slide {
   0% {
