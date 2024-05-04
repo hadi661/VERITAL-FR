@@ -74,6 +74,7 @@
   --------------------- */
   var veno_box = $('.venobox');
   veno_box.venobox();
+
   /*----------------------------
   Page Scroll
   ------------------------------ */
@@ -122,8 +123,19 @@
   /*---------------------
    Testimonial carousel
   ---------------------*/
-  // Array of testimonies
-  var testimonies = [
+  var currentLang = document.documentElement.lang || 'fr'; // Get the current language from the HTML element
+
+var testimonies = {
+  en: [
+    "Philippe Durand: VERITAL has been an essential partner in optimizing our operations. Their technical expertise and commitment to quality have significantly improved our efficiency and compliance with standards.",
+    "Nadia Belkacem: I am impressed by VERITAL's professionalism and commitment to customer satisfaction. Their team has been very responsive and has always met our needs in an efficient and professional manner.",
+    "Youssef Hamdi: Working with VERITAL has been a very enriching experience. Their collaborative approach and willingness to understand our specific needs have been greatly appreciated. I highly recommend their services.",
+    "Amina Khaldi: VERITAL has exceeded all our expectations in terms of control and quality. Their competent team and attention to detail have made all the difference in the success of our projects. We are extremely satisfied with their work.",
+    "Omar Bencherif: I am grateful to VERITAL for their valuable assistance in achieving our compliance and security goals. Their expertise and commitment to excellence have been a true asset to our company.",
+    "Sophia Meziani: VERITAL has been a trusted partner in our journey to continuous improvement. Their proactive approach and willingness to go the extra mile have been essential to ensuring the quality and compliance of our products.",
+    "Karim Boudjellal: I highly recommend VERITAL's services to any company seeking reliable and efficient quality control solutions. Their competent team and commitment to excellence make them a valuable partner in our industry."
+  ],
+  fr: [
     "Philippe Durand: VERITAL a été un partenaire essentiel dans l'optimisation de nos opérations. Leur expertise technique et leur engagement envers la qualité ont considérablement amélioré notre efficacité et notre conformité aux normes.",
     "Nadia Belkacem: Je suis impressionnée par le professionnalisme et l'engagement de VERITAL envers la satisfaction du client. Leur équipe a été très réactive et a toujours répondu à nos besoins de manière efficace et professionnelle.",
     "Youssef Hamdi: Travailler avec VERITAL a été une expérience très enrichissante. Leur approche collaborative et leur volonté de comprendre nos besoins spécifiques ont été très appréciées. Je recommande vivement leurs services.",
@@ -131,24 +143,27 @@
     "Omar Bencherif: Je suis reconnaissant envers VERITAL pour leur assistance précieuse dans la réalisation de nos objectifs de conformité et de sécurité. Leur expertise et leur engagement envers l'excellence ont été un véritable atout pour notre entreprise.",
     "Sophia Meziani: VERITAL a été un partenaire de confiance dans notre parcours vers l'amélioration continue. Leur approche proactive et leur volonté d'aller au-delà des attentes ont été essentielles pour garantir la qualité et la conformité de nos produits.",
     "Karim Boudjellal: Je recommande vivement les services de VERITAL à toute entreprise cherchant des solutions de contrôle de qualité fiables et efficaces. Leur équipe compétente et leur engagement envers l'excellence en font un partenaire précieux dans notre secteur d'activité."
-  ];
-  
-
+  ]
+};
 // Function to display testimonies in a loop
 function displayTestimonies() {
   var testimonialLoop = document.querySelector('.testimonial-loop');
   var index = 0;
 
-  // Display testimonies in a loop
-  setInterval(function() {
-    testimonialLoop.innerHTML = "<div class='testimonial'>" + testimonies[index] + "</div>";
-    index = (index + 1) % testimonies.length;
-  }, 8000); // Change the duration (in milliseconds) to control the speed of testimonies rotation
+  // Check if testimonies array for current language is not empty
+  if (testimonies[currentLang].length > 0) {
+    // Display testimonies in a loop
+    setInterval(function() {
+      testimonialLoop.innerHTML = "<div class='testimonial'>" + testimonies[currentLang][index] + "</div>";
+      index = (index + 1) % testimonies[currentLang].length;
+    }, 8000); // Change the duration (in milliseconds) to control the speed of testimonies rotation
+  } else {
+    console.error("Testimonies array is empty for language:", currentLang);
+  }
 }
 
 // Call the function to start displaying testimonies
-displayTestimonies();
-
+displayTestimonies();  
   /*----------------------------
    isotope active
   ------------------------------ */
@@ -239,49 +254,38 @@ displayTestimonies();
   google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
 })(jQuery);
-/*-- translate basic 
--*/
-document.addEventListener('DOMContentLoaded', function() {
-  // Function to change language
-  function changeLanguage(lang) {
-      const elements = document.querySelectorAll('[data-translate]');
 
-      elements.forEach(element => {
-          const key = element.dataset.translate;
-          element.innerText = translations[lang][key] || key;
-      });
+
+
+function changeLanguage(lang) {
+  // Implement your logic to update page content and/or redirect to the appropriate language version
+  // Here's a placeholder example using jQuery (if included):
+
+  if (lang === 'en') {
+    // Update content or redirect to English version (e.g., `/en/index.html`)
+    $('html').attr('lang', lang);  // Update HTML language attribute
+    // ... additional actions for English
+  } else if (lang === 'fr') {
+    // Update content or redirect to French version (e.g., `/fr/index.html`)
+    $('html').attr('lang', lang);  // Update HTML language attribute
+    // ... additional actions for French
+  } else if (lang === 'ar') {
+    // Update content or redirect to Arabic version (e.g., `/ar/index.html`)
+    $('html').attr('lang', lang);  // Update HTML language attribute
+    // ... additional actions for Arabic
   }
+}
+function changeLanguage(lang) {
+  // Implement your logic to update page content and/or redirect to the appropriate language version
+  // ... (same as before)
 
-  // Language translations
-  const translations = {
-      en: {
-          greeting: 'Hello, World!',
-          paragraph: 'This is a sample paragraph.'
-      },
-      fr: {
-          greeting: 'Bonjour le monde !',
-          paragraph: 'Ceci est un paragraphe d\'exemple.'
-      },
-      ar: {
-          greeting: 'مرحباً بالعالم!',
-          paragraph: 'هذا فقرة عينة.'
-      }
-  };
-
-  // Set default language to English
-  let currentLang = 'en';
-  changeLanguage(currentLang);
-
-  // Event listener for language links
-  const languageLinks = document.querySelectorAll('.language');
-  languageLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-          e.preventDefault();
-          const lang = this.dataset.lang;
-          changeLanguage(lang);
-          currentLang = lang;
-      });
-  });
-});
-
-
+  // Update flag image based on selected language (optional)
+  const flagImage = document.getElementById("language-button");
+  if (lang === 'en') {
+    flagImage.style.backgroundImage = "url('img/blog/flag_en.png')";
+  } else if (lang === 'fr') {
+    flagImage.style.backgroundImage = "url('img/blog/flag_fr.png')";  // Set French flag image
+  } else if (lang === 'ar') {
+    flagImage.style.backgroundImage = "url('img/1/alg.png')";  // Set Arabic flag image
+  }
+}

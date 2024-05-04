@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <title>DG VERITAL</title>
@@ -21,6 +21,8 @@
   <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">  
   <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">  
   <link href="css/responsive.css" rel="stylesheet">
+  <script src="language.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   
 </head>
 
@@ -73,6 +75,7 @@
                   <li>
                     <a class="page-scroll" href="index.html#about">PROFIL</a>
                   </li>
+                  
                   <li>
                     <a class="page-scroll" href="index.html#services">SERVICES</a>
                   </li>
@@ -86,6 +89,14 @@
                   <li>
                     <a class="page-scroll" href="contact.html" target="_blank">CONTACT</a>
                   </li>
+                  <li><div id="language-switcher">
+                    <button id="language-button"></button>
+                    <ul id="language-dropdown">
+                        <li><a href="index.html" onclick="changeLanguage('fr')">Français</a></li>
+                        <li><a href="EN/index.html" onclick="changeLanguage('en')">English</a></li>
+                        <li><a href="#" onclick="changeLanguage('ar')">العربية</a></li>
+                    </ul>
+                </div></li>
                 </ul>
               </div>
               <!-- navbar-collapse -->
@@ -104,13 +115,14 @@
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="img/slider/s1.png" alt="" title="#slider-direction-1" />
+        <img src="img/slider/aero.png" alt="" title="#slider-direction-1" />
         <img src="img/slider/slider1.jpg" alt="" title="#slider-direction-2" />
         <img src="img/slider/s2.png" alt="" title="#slider-direction-3" />
         <img src="img/slider/s3.jpg" alt="" title="#slider-direction-4" />
         <img src="img/slider/s4.jpg" alt="" title="#slider-direction-1" />
         <img src="img/slider/s5.jpg" alt="" title="#slider-direction-2" />
         <img src="img/slider/s6.jpg" alt="" title="#slider-direction-3" />
+        <img src="img/slider/s1.png" alt="" title="#slider-direction-1" />
         <img src="img/slider/s7.jpg" alt="" title="#slider-direction-1" />
         <img src="img/slider/s8.jpg" alt="" title="#slider-direction-2" />
         <img src="img/slider/s9.jpg" alt="" title="#slider-direction-3" />
@@ -228,76 +240,76 @@
     </div>
   </div>
   <!-- End Slider Area -->
-  <!-- start CEO area -->
+<!-- start CEO area -->
  
-  <div id="CEO" class="about-area area-padding" translate="yes">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>MOT DU PDG</h2>
-          </div>
+<div id="CEO" class="about-area area-padding" translate="yes">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h2>MOT DU PDG</h2>
         </div>
-      </div>
-      <div class="row">
-        <!-- single-well start-->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="well-left">
-            <div class="single-well">
-              <a href="#CEO">
-								  <img src="img/about/4.png" alt="">
-								</a>
-                <center>
-                <p ><b>Mr.Mohammed Nabil Hamo</b></p>
-                <p><b> Président Directeur Général </b></p>
-              </center>
-            </div>
-            <div class="image-container">
-              <a href="#home">
-                  <img src="img/about/3.png" alt="">
-              </a>
-          </div>
-          
-             
-               </div>
-        </div>
-        <!-- single-well end-->
-        <div class="col-md-6 col-sm-6 col-xs-12" translate="yes">
-          <div class="well-middle">
-            <div class="single-well">
-              <a href="#">
-                <h4 class="sec-head">MOT DU PDG</h4>
-              </a>
-              <p>
-                VERITAL est de plus en plus sollicité pour contribuer aux débats sur la <b>« sécurité »</b> et <B>« analyse de problèmes potentiels ».</B>
-J’y vois un signe de changement dans le regard des responsables sur cette entreprise et le début d’une reconnaissance des efforts engagés et des responsabilités courageusement assumées dans ces domaines.</p>
-              <p>
-                <ul>
-                  <il>
-                    <p><i class="fa fa-quote-right"></i>  <b>  VERITAL, n’est pas tout à fait comme les autres, ses missions de service public, sa culture de la gestion du risque et la standardisation au plan international de ses métiers sont une réalité que nul ne doit ignorer dans l’ intérêt bien compris de la sécurité et du confort du citoyen et du suivi des engagements conventionnels de notre pays au plan international.</b> <i class="fa fa-quote-left"></i></p>
-                    
-                  </il>
-                </ul>
-            <p>Les responsabilités, la diversité de ses relations et services avec et pour le compte des pouvoirs publics font partie de ses spécificités.</p>
-            <ul>
-              <il>
-                <p><i class="fa fa-quote-right"></i>VERITAL, s’est résolument engagée dans la voie du développement, sans doute au bon moment et certainement à la satisfaction du citoyen qu’elle sert sans qu’ il le sache et des pouvoirs publics qu’elle représente et assiste au plan opérationnel pour assurer leurs responsabilités légales et réglementaires voire constitutionnelles, puisque l’État est responsable vis-à-vis de ses citoyens. <i class="fa fa-quote-left"></i></p>
-                
-              </il>
-            </ul>
-            <p>Je suis convaincu que, forte de ce nouveau regard porté sur elle,VERITAL saura relever le défi, ambitieux certes mais réaliste, d’ être l’entreprise publique de référence en Algérie dans le domaine de la supervision de la sécurité tant en termes d’expertises techniques que de conseils et analyse de problèmes potentiels.</p>
-            <p>Elle continuera de développer sa capacité à promouvoir, en les faisant cohabiter, la sécurité et la protection de l’environnement dans les activités spécifiques de l’aéronautique, des transports maritimes, guidés et de l’ industrie.</p>
-            <p>C’est en fait pour VERITAL, modeste par sa taille mais stratégique par ses missions et responsabilités et la conscience de son rôle d’entreprise citoyenne, un défi majeur car en dépend sa capacité à mener dans la durée sa politique de croissance par le partenariat et affermir son rôle de représentant exclusif des pouvoirs publics en gagnant leur confiance et en veillant au respect de leurs engagements conventionnels au plan international.</p>
-            <p><i class="fa fa-quote-right"></i> <B> Somme toute, VERITAL apporte sa contribution 
-              précieuse à la sécurité des personnes et des biens</B> <i class="fa fa-quote-left"></i></p>
-            </div>
-          </div>
-        </div>
-        <!-- End col-->
       </div>
     </div>
+    <div class="row">
+      <!-- single-well start-->
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="well-left">
+          <div class="single-well">
+            <a href="#CEO">
+                <img src="img/about/4.png" alt="">
+              </a>
+              <center>
+              <p ><b>Mr.Mohammed Nabil Hamo</b></p>
+              <p><b> Président Directeur Général </b></p>
+            </center>
+          </div>
+          <div class="image-container">
+            <a href="#home">
+                <img src="img/about/3.png" alt="">
+            </a>
+        </div>
+        
+           
+             </div>
+      </div>
+      <!-- single-well end-->
+      <div class="col-md-6 col-sm-6 col-xs-12" translate="yes">
+        <div class="well-middle">
+          <div class="single-well">
+            <a href="#">
+              <h4 class="sec-head">MOT DU PDG</h4>
+            </a>
+            <p>
+              VERITAL est de plus en plus sollicité pour contribuer aux débats sur la <b>« sécurité »</b> et <B>« analyse de problèmes potentiels ».</B>
+J’y vois un signe de changement dans le regard des responsables sur cette entreprise et le début d’une reconnaissance des efforts engagés et des responsabilités courageusement assumées dans ces domaines.</p>
+            <p>
+              <ul>
+                <il>
+                  <p><i class="fa fa-quote-right"></i>  <b>  VERITAL, n’est pas tout à fait comme les autres, ses missions de service public, sa culture de la gestion du risque et la standardisation au plan international de ses métiers sont une réalité que nul ne doit ignorer dans l’ intérêt bien compris de la sécurité et du confort du citoyen et du suivi des engagements conventionnels de notre pays au plan international.</b> <i class="fa fa-quote-left"></i></p>
+                  
+                </il>
+              </ul>
+          <p>Les responsabilités, la diversité de ses relations et services avec et pour le compte des pouvoirs publics font partie de ses spécificités.</p>
+          <ul>
+            <il>
+              <p><i class="fa fa-quote-right"></i>VERITAL, s’est résolument engagée dans la voie du développement, sans doute au bon moment et certainement à la satisfaction du citoyen qu’elle sert sans qu’ il le sache et des pouvoirs publics qu’elle représente et assiste au plan opérationnel pour assurer leurs responsabilités légales et réglementaires voire constitutionnelles, puisque l’État est responsable vis-à-vis de ses citoyens. <i class="fa fa-quote-left"></i></p>
+              
+            </il>
+          </ul>
+          <p>Je suis convaincu que, forte de ce nouveau regard porté sur elle,VERITAL saura relever le défi, ambitieux certes mais réaliste, d’ être l’entreprise publique de référence en Algérie dans le domaine de la supervision de la sécurité tant en termes d’expertises techniques que de conseils et analyse de problèmes potentiels.</p>
+          <p>Elle continuera de développer sa capacité à promouvoir, en les faisant cohabiter, la sécurité et la protection de l’environnement dans les activités spécifiques de l’aéronautique, des transports maritimes, guidés et de l’ industrie.</p>
+          <p>C’est en fait pour VERITAL, modeste par sa taille mais stratégique par ses missions et responsabilités et la conscience de son rôle d’entreprise citoyenne, un défi majeur car en dépend sa capacité à mener dans la durée sa politique de croissance par le partenariat et affermir son rôle de représentant exclusif des pouvoirs publics en gagnant leur confiance et en veillant au respect de leurs engagements conventionnels au plan international.</p>
+          <p><i class="fa fa-quote-right"></i> <B> Somme toute, VERITAL apporte sa contribution 
+            précieuse à la sécurité des personnes et des biens</B> <i class="fa fa-quote-left"></i></p>
+          </div>
+        </div>
+      </div>
+      <!-- End col-->
+    </div>
   </div>
-  <!-- end CEO area-->
+</div>
+<!-- end CEO area-->
   <!-- Start About area -->
   <div id="about" class="about-area area-padding" translate="yes">
     <div class="container">
@@ -325,15 +337,21 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
                   <img src="img/1/ser1-600x399.jpg" class="img-fluid" alt="">
               </div>
           </div>
-          
-            
-            <div class="image-container">
+           <div class="image-container">
               <a href="#">
                   <img src="img/about/3.png" alt="">
-                  <img src="img/about/slide 8.jpg" alt="">
+                 
               </a>
              
           </div>
+            
+          <div class="single-well">
+            <a href="#">
+                <img src="img/about/slide 8.jpg" alt="">
+            </a>
+           
+        </div>
+           
           
                </div>
         </div>
@@ -531,7 +549,6 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
     </div>
   </div>
   <!-- End Service area -->
-
   <!-- our-skill-area start -->
   <div class="our-skill-area fix hidden-sm">
     <div class="test-overly"></div>
@@ -577,9 +594,6 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
     </div>
   </div>
   <!-- End Wellcome Area -->
-
-  
-  
 
   <!-- Start portfolio Area -->
   <div id="Divisions" class="services-area area-padding">
@@ -961,6 +975,7 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
           <!-- End Left Blog-->
           <!-- Start Left Blog -->
           <div class="col-md-4 col-sm-4 col-xs-12">
+
             <div class="single-blog">
               <div class="single-blog-img">
                 <a href="blog.html">
@@ -1023,7 +1038,9 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
   </div>
   <!-- End Blog -->
   <!-- Start Suscrive Area -->
-  
+  <div class="section-headline text-center">
+              <h2>Approuvé par les plus grandes marques</h2>
+            </div>
   <div class="slider-container">
     <div class="slider">
       <div class="slide">
@@ -1034,27 +1051,7 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
         <img src="img/1/27-231x202.png" alt="" />
         <img src="img/1/29-225x202.png" alt="" />
         <img src="img/1/30-320x202.png" alt="" />
-        
-        <!-- Duplicate the first image to create a loop -->
-        <img src="img/1/1.png" alt="" />
-      </div>
-    </div>
-  </div>
-  
-  <div class="slider-container">
-    <div class="slider1">
-      <div class="slide1">
-        <img src="img/client/12.png" alt="" /><img src="img/client/13.png" alt="" />
-        <img src="img/client/14.png" alt="" /><img src="img/client/15.png" alt="" />
-        <img src="img/client/16.png" alt="" /><img src="img/client/17.png" alt="" />
-        <img src="img/client/18.png" alt="" /><img src="img/client/19.png" alt="" />
-        <img src="img/client/20.png" alt="" />
-        <!-- Duplicate the first image to create a loop -->
-        <img src="img/client/12.png" alt="" />
-      </div>
-    </div>
-  </div>
-  <!-- <img src="img/client/1.png" alt="" />
+        <img src="img/client/1.png" alt="" />
         <img src="img/client/3.png" alt="" />
         <img src="img/client/4.png" alt="" /><img src="img/client/5.png" alt="" />
         <img src="img/client/6.png" alt="" /><img src="img/client/7.png" alt="" />
@@ -1070,9 +1067,13 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
         <img src="img/client/26.png" alt="" /><img src="img/client/27.png" alt="" />
         <img src="img/client/28.png" alt="" /><img src="img/client/29.png" alt="" />
         <img src="img/client/30.png" alt="" />
-        <img src="img/client/31.png" alt="" /><img src="img/client/32.png" alt="" />
-        --!>
- 
+        <img src="img/client/31.png" alt="" /><img src="img/client/32.png" alt="" /> <!-- Duplicate the first image to create a loop -->
+        <img src="img/1/1.png" alt="" />
+      </div>
+    </div>
+  </div>
+  
+  
   <!-- End Suscrive Area -->
   <!-- Start contact Area -->
   <div id="contact" class="contact-area">
@@ -1274,6 +1275,7 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
   <script src="lib/appear/jquery.appear.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ 
   <script src="js/main.js"></script>
   
  
@@ -1300,6 +1302,8 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
         toggleSecondaryNavbar();
     });
 </script>
+<script src="language.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </body>
 
 </html>

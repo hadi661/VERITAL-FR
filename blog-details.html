@@ -1,39 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>DG VERITAL</title>
+  <title>VERITAL blog</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
   <!-- Favicons -->
-  <link href="img/website imgs/logo-1.png" rel="icon">
-  <link href="img/website imgs/logo-1.png" rel="apple-touch-icon">
+  <link href="img/logo-1.png" rel="icon">
+  <link href="img/logo-1.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
   <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
-  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
-  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Nivo Slider Theme -->
+  <link rel="stylesheet" href="lib/venobox/venobox.css" />
   <link href="css/nivo-slider-theme.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
-  <!-- Responsive Stylesheet File -->
+  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">  
+  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">  
   <link href="css/responsive.css" rel="stylesheet">
-
- 
+  <script src="language.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -41,6 +32,17 @@
   <div id="preloader"></div>
 
   <header>
+    
+    <div class="ticket">
+      <img src="img/1/alg.png" alt="Ticket">
+      <div class="details">
+        <div class="phone-number">Verital SPA</div>
+        <p>dg@verital.dz</p>
+        <p> +213(0)23701727</p>
+        <p> www.verital.dz</p>
+      </div>
+    </div>
+    
     <!-- header-area start -->
     <div id="sticker" class="header-area">
       <div class="container">
@@ -58,9 +60,9 @@
 										<span class="icon-bar"></span>
 									</button>
                 <!-- Brand -->
-                <a class="navbar-brand sus-btn page-scroll sticky-logo" href="index.html">
-                  <img src="img/logo.png" alt="Verital" title="Verital" class="img-fixed logo-image">
-              </a>
+               <a class="navbar-brand sus-btn page-scroll sticky-logo" href="index.html">
+    <img src="img/logo.png" alt="Verital" title="Verital" class="img-fixed logo-image">
+</a>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
@@ -74,9 +76,11 @@
                   <li>
                     <a class="page-scroll" href="index.html#about">PROFIL</a>
                   </li>
+                  
                   <li>
                     <a class="page-scroll" href="index.html#services">SERVICES</a>
                   </li>
+                  
                   <li>
                     <a class="page-scroll" href="index.html#Divisions">DIVISIONS</a>
                   </li>
@@ -84,11 +88,18 @@
                     <a class="page-scroll" href="index.html#blog">ACTUALITES</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="index.html#contact" >CONTACT</a>
+                    <a class="page-scroll" href="contact.html" target="_blank">CONTACT</a>
                   </li>
+                  <li><div id="language-switcher">
+                    <button id="language-button"></button>
+                    <ul id="language-dropdown">
+                        <li><a href="blog-details.html" onclick="changeLanguage('fr')">Français</a></li>
+                        <li><a href="EN/blog-details.html" onclick="changeLanguage('en')">English</a></li>
+                        <li><a href="#" onclick="changeLanguage('ar')">العربية</a></li>
+                    </ul>
+                </div></li>
                 </ul>
-              </div>
-              <!-- navbar-collapse -->
+              </div>            <!-- navbar-collapse -->
             </nav>
             <!-- END: Navigation -->
            
@@ -254,94 +265,14 @@
               <!-- single-blog start -->
               <article class="blog-post-wrapper">
                 <div class="post-thumbnail">
-                  <img src="img/blog/6.jpg" alt="" />
+                  <img src="img/blog/123.jpg" alt="" width="200" height="200">
+                  <img src="img/blog/428710117_904534181463947_4763492294055810991_n.jpg" alt="" width="200" height="200">
+                  <img src="img/blog/429532026_904534388130593_404600344822068039_n.jpg" alt="" width="200" height="200">
                 </div>
                 <div class="post-information">
-                  <h2>Blog image post layout</h2>
-                  <div class="entry-meta">
-                    <span class="author-meta"><i class="fa fa-user"></i> <a href="#">admin</a></span>
-                    <span><i class="fa fa-clock-o"></i> date and time</span>
-                    <span class="tag-meta">
-												<i class="fa fa-folder-o"></i>
-												<a href="#">subject of the doc </a>,
-												<a href="#">title of the doc</a>
-											</span>
-                    <span>
-												<i class="fa fa-tags"></i>
-												<a href="#">tag1</a>,
-												<a href="#"> where"alg"</a>,
-												<a href="#">location</a>
-											</span>
-                    <span><i class="fa fa-comments-o"></i> <a href="#"> number of comments</a></span>
-                  </div>
-                  <div class="entry-content">
-                    <p>some text doc </p>
-                    <blockquote>
-                      <p>some text doc.</p>
-                    </blockquote>
-                    <p>the rest.</p>
-                  </div>
-                </div>
-              </article>
-              <div class="clear"></div>
-              <div class="single-post-comments">
-                <div class="comments-area">
-                  <div class="comments-heading">
-                    <h3>Number of comments on the doc </h3>
-                  </div>
-                  <div class="comments-list">
-                    <ul>
-                      <li class="threaded-comments">
-                        <div class="comments-details">
-                          <div class="comments-list-img">
-                            <img src="img/blog/b02.jpg" alt="post-author">
-                          </div>
-                          <div class="comments-content-wrap">
-                            <span>
-																<b><a href="#">who wrote the comment  </a></b>
-																the comment 
-																<span class="post-time">date and time of the comment </span>
-                            <a href="#">Reply</a>
-                            </span>
-                            <p>reply on the comment </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="comments-details">
-                          <div class="comments-list-img">
-                            <img src="img/blog/b02.jpg" alt="post-author">
-                          </div>
-                          <div class="comments-content-wrap">
-                            <span>
-																<b><a href="#">admin</a></b>
-																Post author
-																<span class="post-time">October 6, 2014 at 6:18 pm </span>
-                            <a href="#">Reply</a>
-                            </span>
-                            <p>replyfrom verital.. exemple js </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="threaded-comments">
-                        <div class="comments-details">
-                          <div class="comments-list-img">
-                            <img src="img/blog/b02.jpg" alt="post-author">
-                          </div>
-                          <div class="comments-content-wrap">
-                            <span>
-																<b><a href="#">demo</a></b>
-																Post author
-																<span class="post-time">October 6, 2014 at 7:25 pm</span>
-                            <a href="#">Reply</a>
-                            </span>
-                            <p>text</p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                  
+                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fverital.officiel%2Fposts%2Fpfbid0zk4THQYyez6Wgn9EmX5q5JtWEwtiqErKdqzYgQuJqUz7igaw7b97KbdAME3HMjepl&show_text=true&width=500&is_preview=true" width="500" height="532" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fverital.officiel%2Fposts%2Fpfbid02gVho48WuPqSpXD3uHnVxC21ioq6gZULiddXP7xAPgcB1UFFR9Mw78wrLkHDvfytMl&show_text=true&width=500&is_preview=true" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 <div class="comment-respond">
                   <h3 class="comment-reply-title">Leave a Reply </h3>
                   <span class="email-notes">Your email address will not be published. Required fields are marked *</span>
