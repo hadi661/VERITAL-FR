@@ -2187,7 +2187,7 @@ span.email-notes {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-image: url("../img/1/alg.png"), url("../img/blog/flag_en.png"), url("../img/blog/flag_fr.png");  /* Replace with your flag image path */
+  background-image: url("../img/blog/flag_en.png");  /* Replace with your flag image path */
   background-size: cover;
   background-position: center;
   cursor: pointer;

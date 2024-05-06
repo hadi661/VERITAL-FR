@@ -2191,7 +2191,7 @@ span.email-notes {
   max-height: 65px;
   display: block; /* Ensure the image is block-level */
   margin: auto; 
-  background-image: url("../img/1/alg.png"), url("../img/blog/flag_en.png"), url("../img/blog/flag_fr.png");  /* Replace with your flag image path */
+  background-image: url("../img/lang.png");  /* Replace with your flag image path */
   background-size: cover;
   background-position: center;
   cursor: pointer;

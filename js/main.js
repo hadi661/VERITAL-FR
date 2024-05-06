@@ -123,47 +123,58 @@
   /*---------------------
    Testimonial carousel
   ---------------------*/
-  var currentLang = document.documentElement.lang || 'fr'; // Get the current language from the HTML element
-
-var testimonies = {
-  en: [
-    "Philippe Durand: VERITAL has been an essential partner in optimizing our operations. Their technical expertise and commitment to quality have significantly improved our efficiency and compliance with standards.",
-    "Nadia Belkacem: I am impressed by VERITAL's professionalism and commitment to customer satisfaction. Their team has been very responsive and has always met our needs in an efficient and professional manner.",
-    "Youssef Hamdi: Working with VERITAL has been a very enriching experience. Their collaborative approach and willingness to understand our specific needs have been greatly appreciated. I highly recommend their services.",
-    "Amina Khaldi: VERITAL has exceeded all our expectations in terms of control and quality. Their competent team and attention to detail have made all the difference in the success of our projects. We are extremely satisfied with their work.",
-    "Omar Bencherif: I am grateful to VERITAL for their valuable assistance in achieving our compliance and security goals. Their expertise and commitment to excellence have been a true asset to our company.",
-    "Sophia Meziani: VERITAL has been a trusted partner in our journey to continuous improvement. Their proactive approach and willingness to go the extra mile have been essential to ensuring the quality and compliance of our products.",
-    "Karim Boudjellal: I highly recommend VERITAL's services to any company seeking reliable and efficient quality control solutions. Their competent team and commitment to excellence make them a valuable partner in our industry."
-  ],
-  fr: [
-    "Philippe Durand: VERITAL a été un partenaire essentiel dans l'optimisation de nos opérations. Leur expertise technique et leur engagement envers la qualité ont considérablement amélioré notre efficacité et notre conformité aux normes.",
-    "Nadia Belkacem: Je suis impressionnée par le professionnalisme et l'engagement de VERITAL envers la satisfaction du client. Leur équipe a été très réactive et a toujours répondu à nos besoins de manière efficace et professionnelle.",
-    "Youssef Hamdi: Travailler avec VERITAL a été une expérience très enrichissante. Leur approche collaborative et leur volonté de comprendre nos besoins spécifiques ont été très appréciées. Je recommande vivement leurs services.",
-    "Amina Khaldi: VERITAL a dépassé toutes nos attentes en matière de contrôle et de qualité. Leur équipe compétente et leur souci du détail ont fait toute la différence dans la réussite de nos projets. Nous sommes extrêmement satisfaits de leur travail.",
-    "Omar Bencherif: Je suis reconnaissant envers VERITAL pour leur assistance précieuse dans la réalisation de nos objectifs de conformité et de sécurité. Leur expertise et leur engagement envers l'excellence ont été un véritable atout pour notre entreprise.",
-    "Sophia Meziani: VERITAL a été un partenaire de confiance dans notre parcours vers l'amélioration continue. Leur approche proactive et leur volonté d'aller au-delà des attentes ont été essentielles pour garantir la qualité et la conformité de nos produits.",
-    "Karim Boudjellal: Je recommande vivement les services de VERITAL à toute entreprise cherchant des solutions de contrôle de qualité fiables et efficaces. Leur équipe compétente et leur engagement envers l'excellence en font un partenaire précieux dans notre secteur d'activité."
-  ]
-};
-// Function to display testimonies in a loop
-function displayTestimonies() {
-  var testimonialLoop = document.querySelector('.testimonial-loop');
-  var index = 0;
-
-  // Check if testimonies array for current language is not empty
-  if (testimonies[currentLang].length > 0) {
-    // Display testimonies in a loop
-    setInterval(function() {
-      testimonialLoop.innerHTML = "<div class='testimonial'>" + testimonies[currentLang][index] + "</div>";
-      index = (index + 1) % testimonies[currentLang].length;
-    }, 8000); // Change the duration (in milliseconds) to control the speed of testimonies rotation
-  } else {
-    console.error("Testimonies array is empty for language:", currentLang);
+  var testimonies = {
+    en: [
+      "Philippe Durand: VERITAL has been an essential partner in optimizing our operations. Their technical expertise and commitment to quality have significantly improved our efficiency and compliance with standards.",
+      "Nadia Belkacem: I am impressed by VERITAL's professionalism and commitment to customer satisfaction. Their team has been very responsive and has always met our needs in an efficient and professional manner.",
+      "Youssef Hamdi: Working with VERITAL has been a very enriching experience. Their collaborative approach and willingness to understand our specific needs have been greatly appreciated. I highly recommend their services.",
+      "Amina Khaldi: VERITAL has exceeded all our expectations in terms of control and quality. Their competent team and attention to detail have made all the difference in the success of our projects. We are extremely satisfied with their work.",
+      "Omar Bencherif: I am grateful to VERITAL for their valuable assistance in achieving our compliance and security goals. Their expertise and commitment to excellence have been a true asset to our company.",
+      "Sophia Meziani: VERITAL has been a trusted partner in our journey to continuous improvement. Their proactive approach and willingness to go the extra mile have been essential to ensuring the quality and compliance of our products.",
+      "Karim Boudjellal: I highly recommend VERITAL's services to any company seeking reliable and efficient quality control solutions. Their competent team and commitment to excellence make them a valuable partner in our industry."
+    ],
+    fr: [
+      "Philippe Durand: VERITAL a été un partenaire essentiel dans l'optimisation de nos opérations. Leur expertise technique et leur engagement envers la qualité ont considérablement amélioré notre efficacité et notre conformité aux normes.",
+      "Nadia Belkacem: Je suis impressionnée par le professionnalisme et l'engagement de VERITAL envers la satisfaction du client. Leur équipe a été très réactive et a toujours répondu à nos besoins de manière efficace et professionnelle.",
+      "Youssef Hamdi: Travailler avec VERITAL a été une expérience très enrichissante. Leur approche collaborative et leur volonté de comprendre nos besoins spécifiques ont été très appréciées. Je recommande vivement leurs services.",
+      "Amina Khaldi: VERITAL a dépassé toutes nos attentes en matière de contrôle et de qualité. Leur équipe compétente et leur souci du détail ont fait toute la différence dans la réussite de nos projets. Nous sommes extrêmement satisfaits de leur travail.",
+      "Omar Bencherif: Je suis reconnaissant envers VERITAL pour leur assistance précieuse dans la réalisation de nos objectifs de conformité et de sécurité. Leur expertise et leur engagement envers l'excellence ont été un véritable atout pour notre entreprise.",
+      "Sophia Meziani: VERITAL a été un partenaire de confiance dans notre parcours vers l'amélioration continue. Leur approche proactive et leur volonté d'aller au-delà des attentes ont été essentielles pour garantir la qualité et la conformité de nos produits.",
+      "Karim Boudjellal: Je recommande vivement les services de VERITAL à toute entreprise cherchant des solutions de contrôle de qualité fiables et efficaces. Leur équipe compétente et leur engagement envers l'excellence en font un partenaire précieux dans notre secteur d'activité."
+    ],
+    ar: [
+      "فيليب دوراند: كانت فريطال شريكًا أساسيًا في تحسين عملياتنا. لقد ساهمت خبرتهم التقنية والتزامهم بالجودة بشكل كبير في تحسين كفاءتنا وامتثالنا للمعايير.",
+      "نادية بلقاسم: أنا معجبة بالاحترافية والالتزام الذي تظهره فريطال تجاه رضا العملاء. كان فريقهم سريع الاستجابة ودائمًا ما يلبي احتياجاتنا بكفاءة ومهنية.",
+      "يوسف حمدي: كان العمل مع فريطال تجربة مثرية للغاية. تقديرهم للتعاون واستعدادهم لفهم احتياجاتنا الخاصة كانت محل تقدير كبير. أوصي بشدة بخدماتهم.",
+      "أمينة الخالدي: تجاوزت فريطال كل توقعاتنا فيما يتعلق بالرقابة والجودة. لقد جعل فريقهم المؤهل واهتمامهم بالتفاصيل الفارق في نجاح مشاريعنا. نحن راضون للغاية عن عملهم.",
+      "عمر بن شريف: أنا ممتن لفريطال على مساعدتهم القيمة في تحقيق أهدافنا فيما يتعلق بالامتثال والأمان. كانت خبرتهم والتزامهم بالتميز موردًا حقيقيًا لشركتنا.",
+      "صوفيا مزياني: كانت فريطال شريكًا موثوقًا به في رحلتنا نحو التحسين المستمر. نهجهم الاستباقي واستعدادهم لتجاوز التوقعات كانا أساسيين في ضمان جودة منتجاتنا ومطابقتها.",
+      "كريم بوجلال: أوصي بشدة بخدمات فريطال لأي شركة تبحث عن حلول موثوقة وفعالة للرقابة على الجودة. يجعل فريقهم المؤهل والتزامهم بالتميز شريكًا قيمًا في مجالنا."
+  ]  
+  };
+  
+  // Function to display testimonies in a loop
+  function displayTestimonies() {
+    // Get the current language from the HTML element
+    var currentLang = document.documentElement.lang || 'fr';
+  
+    var testimonialLoop = document.querySelector('.testimonial-loop');
+    var index = 0;
+  
+    // Check if testimonies array for current language is not empty
+    if (testimonies[currentLang].length > 0) {
+      // Display testimonies in a loop
+      setInterval(function() {
+        testimonialLoop.innerHTML = "<div class='testimonial'>" + testimonies[currentLang][index] + "</div>";
+        index = (index + 1) % testimonies[currentLang].length;
+      }, 8000); // Change the duration (in milliseconds) to control the speed of testimonies rotation
+    } else {
+      console.error("Testimonies array is empty for language:", currentLang);
+    }
   }
-}
-
-// Call the function to start displaying testimonies
-displayTestimonies();  
+  
+  // Call the function to start displaying testimonies
+  displayTestimonies(); 
   /*----------------------------
    isotope active
   ------------------------------ */
