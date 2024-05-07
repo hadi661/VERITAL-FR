@@ -23,15 +23,7 @@
   <link href="css/responsive.css" rel="stylesheet">
   <script src="language.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-  <style>
-    .navbar-nav {
-      direction: rtl;
-    }
-
-    .navbar-nav > li {
-      float: right;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -79,7 +71,7 @@
                     </b></a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="index.html#CEO" ><b>رسالة من الرئيس التنفيذي
+                    <a class="page-scroll" href="index.html#CEO" ><b>كلمة الرئيس التنفيذي
                     </b></a>
                   </li>
                   <li>
@@ -102,9 +94,9 @@
                   <li><div id="language-switcher">
                     <button id="language-button"></button>
                     <ul id="language-dropdown">
-                        <li><a href="index.html" onclick="changeLanguage('fr')">Français</a></li>
-                        <li><a href="EN/index.html" onclick="changeLanguage('en')">English</a></li>
-                        <li><a href="#" onclick="changeLanguage('ar')">العربية</a></li>
+                        <li><a href="../blog-details.html" onclick="changeLanguage('fr')">Français</a></li>
+                        <li><a href="../EN/blog-details.html" onclick="changeLanguage('en')">English</a></li>
+                        <li><a href="blog-details.html" onclick="changeLanguage('ar')">العربية</a></li>
                     </ul>
                 </div></li>
                 </ul>
@@ -130,10 +122,10 @@
           <div class="slider-content text-center">
             <div class="header-bottom">
               <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">Blog Details </h1>
+                <h1 class="title2">تفاصيل المدونة</h1>
               </div>
               <div class="layer3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
-                <h2 class="title3">page d'actualite Verital</h2>
+                <h2 class="title3">صفحة اخبارية فريطال</h2>
               </div>
             </div>
           </div>
@@ -147,11 +139,11 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="page-head-blog">
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- search option start -->
               <form action="#">
                 <div class="search-option">
-                  <input type="text" placeholder="Search...">
+                  <input type="text" placeholder="بحث...">
                   <button class="button" type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
@@ -159,10 +151,10 @@
               </form>
               <!-- search option end -->
             </div>
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- recent start -->
               <div class="left-blog">
-                <h4>recent post</h4>
+                <h4>المنشورات الاخيرة</h4>
                 <div class="recent-post">
                   <!-- start single post -->
                   <div class="recent-single-post">
@@ -172,7 +164,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="blog-details.html"> les derniers événements en Audit ..</a></p>
+                      <p><a href="blog-details.html"> آخر الأحداث في التدقيق..</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -184,7 +176,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="blog-details.html"> the latest events in....</a></p>
+                      <p><a href="blog-details.html">آخر الأحداث في التدقيق...</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -196,7 +188,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="blog-details.html"> the latest events in.....</a></p>
+                      <p><a href="blog-details.html"> آخر الأحداث في التدقيق...</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -208,7 +200,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="blog-details.html"> the latest events and news from .</a></p>
+                      <p><a href="blog-details.html"> آخر الأحداث والأخبار من.</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -217,9 +209,9 @@
               <!-- recent end -->
             </div>
             
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <div class="left-blog">
-                <h4>archive</h4>
+                <h4>ارشيف</h4>
                 <ul>
                   <li>
                     <a href="#">07 -07- 2024</a>
@@ -234,31 +226,31 @@
                 </ul>
               </div>
             </div>
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <div class="left-tags blog-tags">
                 <div class="popular-tag left-side-tags left-blog">
-                  <h4>Tags populaires</h4>
+                  <h4>روابط اكثر شعبية </h4>
                   <ul>
                     <li>
-                      <a href="Aero.html">Aéronautiques</a>
+                      <a href="Aero.html">قسم الطيران</a>
                     </li>
                     <li>
-                      <a href="Marine.html">Marin</a>
+                      <a href="Marine.html">القسم البحري</a>
                     </li>
                     <li>
-                      <a href="Quality.html">Contrôle de qualité</a>
+                      <a href="Quality.html">مراقبة الجودة </a>
                     </li>
                     <li>
-                      <a href="Industry.html"> Industrie</a>
+                      <a href="Industry.html"> صناعة </a>
                     </li>
                     <li>
-                      <a href="Rail.html"> Transport ferroviaire et guidé</a>
+                      <a href="Rail.html"> السكك الحديدية والنقل الموجه</a>
                     </li>
                     <li>
-                      <a href="Containers.html">Contrôle et vérification des conteneurs</a>
+                      <a href="Containers.html">مراقبة والتحقق من الحاويات</a>
                     </li>
                     <li>
-                      <a href="Elevators.html"> Inspection technique des ascenseurs</a>
+                      <a href="Elevators.html">الفحص الفني للمصاعد</a>
                     </li>
                   
                   </ul>
@@ -273,7 +265,7 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <!-- single-blog start -->
-              <article class="blog-post-wrapper">
+              <article class="blog-post-wrapper" style="text-align: right;">
                 <div class="post-thumbnail">
                   <img src="img/blog/123.jpg" alt="" width="200" height="200">
                   <img src="img/blog/428710117_904534181463947_4763492294055810991_n.jpg" alt="" width="200" height="200">
@@ -284,26 +276,26 @@
                   <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fverital.officiel%2Fposts%2Fpfbid0zk4THQYyez6Wgn9EmX5q5JtWEwtiqErKdqzYgQuJqUz7igaw7b97KbdAME3HMjepl&show_text=true&width=500&is_preview=true" width="500" height="532" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                   <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fverital.officiel%2Fposts%2Fpfbid02gVho48WuPqSpXD3uHnVxC21ioq6gZULiddXP7xAPgcB1UFFR9Mw78wrLkHDvfytMl&show_text=true&width=500&is_preview=true" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 <div class="comment-respond">
-                  <h3 class="comment-reply-title">Leave a Reply </h3>
-                  <span class="email-notes">Your email address will not be published. Required fields are marked *</span>
+                  <h3 class="comment-reply-title">اترك رد</h3>
+                  <span class="email-notes">لن يتم نشر عنوان بريدك الإلكتروني. الحقول المطلوبة مشار إليها *</span>
                   <form action="#">
                     <div class="row">
                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <p>Name *</p>
+                        <p>اسم *</p>
                         <input type="text" />
                       </div>
                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <p>Email *</p>
+                        <p>بريد إلكتروني *</p>
                         <input type="email" />
                       </div>
                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <p>Website</p>
+                        <p>موقع إلكتروني</p>
                         <input type="text" />
                       </div>
                       <div class="col-lg-12 col-md-12 col-sm-12 comment-form-comment">
-                        <p>Website</p>
+                        <p>الرد </p>
                         <textarea id="message-box" cols="30" rows="10"></textarea>
-                        <input type="submit" value="Post Comment" />
+                        <input type="submit" value="اترك ردا" />
                       </div>
                     </div>
                   </form>
