@@ -2242,4 +2242,7 @@ span.email-notes {
   float: left;
 }
 
+#language-dropdown.scroll {
+  background-color: rgba(44, 43, 43, 0.349); /* Color when scrolled */
+}
 
