@@ -66,7 +66,7 @@
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" >
                   <li class="active">
                     <a class="page-scroll" href="index.html#home" >ACCUEIL</a>
                   </li>
@@ -90,16 +90,38 @@
                   <li>
                     <a class="page-scroll" href="contact.html" target="_blank">CONTACT</a>
                   </li>
-                  <li><div id="language-switcher">
-                    <button id="language-button"></button>
-                    <ul id="language-dropdown">
-                        <li><a href="blog-details.html" onclick="changeLanguage('fr')">Français</a></li>
-                        <li><a href="EN/blog-details.html" onclick="changeLanguage('en')">English</a></li>
-                        <li><a href="Ar/blog-details.html" onclick="changeLanguage('ar')">العربية</a></li>
-                    </ul>
-                </div></li>
+                 
                 </ul>
-              </div>            <!-- navbar-collapse -->
+                <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                  <ul class="nav navbar-nav navbar-right" >
+                    <li class="active">
+                    </ul>  
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown hidden-xs">
+                      <div id="language-switcher">
+                          <button id="language-button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                          <ul id="language-dropdown" class="dropdown-menu">
+                              <li><a href="blog-details.html" onclick="changeLanguage('fr')">Français</a></li>
+                              <li><a href="EN/blog-details.html" onclick="changeLanguage('en')">English</a></li>
+                              <li><a href="AR/blog-details.html" onclick="changeLanguage('ar')">العربية</a></li>
+                          </ul>
+                      </div>
+                  </li> 
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown visible-xs">
+                        <div id="language-switcher">
+                            <ul id="language-list" class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" style="display: flex;">
+                                <li style="margin-right: 10px;"><a href="blog-details.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li style="margin-right: 10px;"><a href="EN/blog-details.html" onclick="changeLanguage('en')">English</a></li>
+                                <li style="margin-block: 5px;"><a href="AR/blog-details.html" onclick="changeLanguage('ar')">العربية</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+              
+                  
+              <!-- navbar-collapse -->
             </nav>
             <!-- END: Navigation -->
            

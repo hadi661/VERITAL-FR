@@ -243,60 +243,67 @@
     });
   }
 
-  /*---------------------
-     Google Maps
-  --------------------- */
-  var get_latitude = $('#google-map').data('latitude');
-  var get_longitude = $('#google-map').data('longitude');
-
-  function initialize_google_map() {
-    var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-    var mapOptions = {
-      zoom: 14,
-      scrollwheel: false,
-      center: myLatlng
-    };
-    var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map
-    });
+  function changeLanguage(lang) {
+    // Implement your logic to update page content and/or redirect to the appropriate language version
+    // Here's a placeholder example using jQuery (if included):
+  
+    if (lang === 'en') {
+      // Update content or redirect to English version (e.g., `/en/index.html`)
+      $('html').attr('lang', lang);  // Update HTML language attribute
+      // ... additional actions for English
+    } else if (lang === 'fr') {
+      // Update content or redirect to French version (e.g., `/fr/index.html`)
+      $('html').attr('lang', lang);  // Update HTML language attribute
+      // ... additional actions for French
+    } else if (lang === 'ar') {
+      // Update content or redirect to Arabic version (e.g., `/ar/index.html`)
+      $('html').attr('lang', lang);  // Update HTML language attribute
+      // ... additional actions for Arabic
+    }
   }
-  google.maps.event.addDomListener(window, 'load', initialize_google_map);
+  function changeLanguage(lang) {
+    // Implement your logic to update page content and/or redirect to the appropriate language version
+    // ... (same as before)
+  
+    // Update flag image based on selected language (optional)
+    const flagImage = document.getElementById("language-button");
+    if (lang === 'en') {
+      flagImage.style.backgroundImage = "url('img/blog/flag_en.png')";
+    } else if (lang === 'fr') {
+      flagImage.style.backgroundImage = "url('img/blog/flag_fr.png')";  // Set French flag image
+    } else if (lang === 'ar') {
+      flagImage.style.backgroundImage = "url('img/1/alg.png')";  // Set Arabic flag image
+    }
+  }
+   //smooth scrooling 
+   $(document).ready(function(){
+    // Add smooth scrolling to all links in navbar
+    $("navbar a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+    
+            // Store hash
+            var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+              // Use a custom easing function for more control over the scrolling speed
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, {
+              duration: 3000, // Adjust the duration as needed
+              easing: 'easeInOutCubic', // Use a custom easing function
+                complete: function(){
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                }
+            });
+        } // End if
+    });
+  }); 
 
 })(jQuery);
 
 
 
-function changeLanguage(lang) {
-  // Implement your logic to update page content and/or redirect to the appropriate language version
-  // Here's a placeholder example using jQuery (if included):
-
-  if (lang === 'en') {
-    // Update content or redirect to English version (e.g., `/en/index.html`)
-    $('html').attr('lang', lang);  // Update HTML language attribute
-    // ... additional actions for English
-  } else if (lang === 'fr') {
-    // Update content or redirect to French version (e.g., `/fr/index.html`)
-    $('html').attr('lang', lang);  // Update HTML language attribute
-    // ... additional actions for French
-  } else if (lang === 'ar') {
-    // Update content or redirect to Arabic version (e.g., `/ar/index.html`)
-    $('html').attr('lang', lang);  // Update HTML language attribute
-    // ... additional actions for Arabic
-  }
-}
-function changeLanguage(lang) {
-  // Implement your logic to update page content and/or redirect to the appropriate language version
-  // ... (same as before)
-
-  // Update flag image based on selected language (optional)
-  const flagImage = document.getElementById("language-button");
-  if (lang === 'en') {
-    flagImage.style.backgroundImage = "url('img/blog/flag_en.png')";
-  } else if (lang === 'fr') {
-    flagImage.style.backgroundImage = "url('img/blog/flag_fr.png')";  // Set French flag image
-  } else if (lang === 'ar') {
-    flagImage.style.backgroundImage = "url('img/1/alg.png')";  // Set Arabic flag image
-  }
-}

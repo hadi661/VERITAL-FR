@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>شركة فريطال</title>
@@ -9,6 +9,7 @@
   <!-- Favicons -->
   <link href="img/logo-1.png" rel="icon">
   <link href="img/logo-1.png" rel="apple-touch-icon">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +24,7 @@
   <link href="css/responsive.css" rel="stylesheet">
   <script src="language.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -35,7 +36,7 @@
     <div class="ticket">
       <img src="img/1/alg.png" alt="Ticket">
       <div class="details">
-        <div class="phone-number">شركة فريطال</div>
+        <div class="phone-number">Verital SPA</div>
         <p>dg@verital.dz</p>
         <p> +213(0)23701727</p>
         <p> www.verital.dz</p>
@@ -49,7 +50,7 @@
           <div class="col-md-12 col-sm-12">
 
             <!-- Navigation -->
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default ">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
@@ -67,41 +68,62 @@
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                 <ul class="nav navbar-nav navbar-right" >
                   <li class="active">
-                    <a class="page-scroll" href="index.html#home" ><b>الرئيسية
-                    </b></a>
+                    <a class="page-scroll" href="index.html#home"   >الرئيسية</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="index.html#CEO" ><b>رسالة من الرئيس التنفيذي
-                    </b></a>
+                    <a class="page-scroll" href="#Aero"  >الطيران</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="index.html#about"><b> من نحن</b></a>
+                    <a class="page-scroll" href="#Marine" >البحرية</a>
                   </li>
                   
                   <li>
-                    <a class="page-scroll" href="index.html#services"><b>خدمات</b></a>
-                  </li>
-                  
-                  <li>
-                    <a class="page-scroll" href="index.html#Divisions"><b>الأقسام</b></a>
+                    <a class="page-scroll" href="#quality"  >الجودة</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="index.html#blog"><b> نشاطات وأخبار</b></a>
+                    <a class="page-scroll" href="#industry"  >الصناعة</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="contact.html" target="_blank"><b> اتصل بنا</b></a>
+                    <a class="page-scroll" href="#Rail"  >السكة الحديدية</a>
                   </li>
-                  <li><div id="language-switcher">
-                    <button id="language-button"></button>
-                    <ul id="language-dropdown">
-                        <li><a href="../index2.html" onclick="changeLanguage('fr')">Français</a></li>
-                        <li><a href="../EN/index2.html" onclick="changeLanguage('en')">English</a></li>
-                        <li><a href="index2.html" onclick="changeLanguage('ar')">العربية</a></li>
-                    </ul>
-                </div></li>
+                  <li>
+                    <a class="page-scroll" href="#Containers"  >الحاويات</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#Elevators"  >المصاعد</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="contact.html" target="_blank"  >اتصل بنا</a>
+                  </li>
+                 
                 </ul>
-              </div>
-              <!-- navbar-collapse -->
+                <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                  <ul class="nav navbar-nav navbar-right" >
+                    <li class="active">
+                    </ul>  
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown hidden-xs">
+                      <div id="language-switcher">
+                          <button id="language-button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                          <ul id="language-dropdown" class="dropdown-menu">
+                              <li><a href="../index2.html" onclick="changeLanguage('fr')">Français</a></li>
+                              <li><a href="index2.html" onclick="changeLanguage('en')">English</a></li>
+                              <li><a href="../AR/index2.html" onclick="changeLanguage('ar')">العربية</a></li>
+                          </ul>
+                      </div>
+                  </li> 
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown visible-xs">
+                        <div id="language-switcher">
+                            <ul id="language-list" class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" style="display: flex;">
+                                <li style="margin-right: 10px;"><a href="../index2.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li style="margin-right: 10px;"><a href="index2.html" onclick="changeLanguage('en')">English</a></li>
+                                <li style="margin-block: 5px;"><a href="../AR/index2.html" onclick="changeLanguage('ar')">العربية</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
             </nav>
             <!-- END: Navigation -->
            
@@ -125,9 +147,9 @@
           <div class="slider-content text-center">
             <div class="header-bottom">
               <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">DIVISION AÉRONAUTIQUE</h1>
+                <h1 class="title2">قسم الطيران</h1>
               </div>
-              
+          
             </div>
           </div>
         </div>
@@ -144,18 +166,18 @@
               <!-- search option start -->
               <form action="#">
                 <div class="search-option">
-                  <input type="text" placeholder="Search...">
+                  <input type="text" placeholder="بحث...">
                   <button class="button" type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
                 </div>
               </form>
-              <!-- search option end -->
+                  <!-- search option end -->
             </div>
             <div class="single-blog-page">
               <!-- recent start -->
               <div class="left-blog">
-                <h4> Our services</h4>
+                <h4> مهامنا</h4>
                 <div class="recent-post">
                   <!-- start single post -->
                   <div class="recent-single-post">
@@ -165,7 +187,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Aero.html">Surveillance de navigabilité</a></p>
+                      <p><a href="Aero.html">مراقبة صلاحية الطيران</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -177,7 +199,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Aero.html">Evaluation de la sécurité</a></p>
+                      <p><a href="Aero.html">تقييم السلامة</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -189,7 +211,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Aero.html">Enquête sur les accidents et incidents graves.</a></p>
+                      <p><a href="Aero.html">التحقيق في الحوادث والأحداث الخطيرة</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -201,7 +223,7 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Aero.html">Les contrôles SANAA SAFAA</a></p>
+                      <p><a href="Aero.html">برنامج صنعاء / صفاء</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -210,15 +232,14 @@
               <!-- recent end -->
             </div>
             
-            
+                      
           </div>
         </div>
         <!-- End left sidebar -->
-        <!-- Start single blog -->
         <div class="col-md-8 col-sm-8 col-xs-12">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
+              <div class="single-blog "style="text-align: right;">
                 <div class="single-blog-img">
                   <a href="#">
 											<img src="img/about/99.png" alt="">
@@ -229,32 +250,30 @@
                 </div>
                 <div class="blog-text">
                   <h4>
-											<a href="#">Aeronautics</a>
+											<a href="#">قسم الطيران</a>
 										</h4>
-                  <p>
-                   this division is responsible for : Safety assessment and 
-                   Airworthiness Monitoring Investigation of accidents and serious incidents also SANAA SAFAA controls       </p>
-                </div>
+                  <p>السلامة هي شرط لصحة الطيران المدني وتطوره. كمندوب لسلطة الطيران المدني منذ عام 1989 ، من خلال مراقبة صلاحية الطائرات للطيران جنبا إلى جنب مع جميع الفاعلين في مجال الطيران المدني يساهم في هذا التطور</p>
+                    <a href="#">
+											<img src="img/about/aero1.png" alt="">
+										</a>
+                    <p>تم تصميم وهيكلة فريطال  لتلبية مهمة المراقبة الخاصة بها من خلال تنظيم بسيط وطرق عمل موصوفة في مستودع حي. يتم الاعتراف بالموظفين الذين يتم الحفاظ على مؤهلاتهم وفحصها باستمرار من قبل هيئة الطيران المدني</p>
+                <p>بشفافية تامة ، تسمح المؤشرات ذات الصلة والإجراءات الصارمة لسلطة الطيران المدني بممارسة الرقابة على تشغيل. فريطال. أثناء تحسين خدماتها ، لا سيما من حيث المعلومات والشرح وتقليل أوقات تعليمات الاستجابة ، تساهم  فريطال  في تقليل التكاليف من خلال الإدارة الفعالة</p>
+              <p>التشاور مع المنظمات المهنية والشركاء شرط لفعالية المهمة لأنهم اللاعبون الرئيسيون في الأمن. هذه الاستشارة دائمة تمامًا و فريطال هي اليوم شركة ناجحة تتكيف مع التغييرات في اللوائح والبيئة وطرق المراقبة</p>
+              </div>
+
                 <span>
                  
-										<a href="Aero.html" class="ready-btn">Read more</a>
+									<a href="blog-details.html" class="ready-btn">لمعرفة المزيد</a>
 									</span>
               </div>
             </div>
-            <!-- End single blog -->
-           
-            
+             <!-- End single blog -->
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- End Blog Area -->
-
-  <div class="clearfix"></div>
-
   <!-- end Aero area-->
-
   <!-- Start marine area -->
   <div id="Marine" class="slider-area"></div>
   <div class="header-bg5 page-area">
@@ -265,9 +284,8 @@
           <div class="slider-content text-center">
             <div class="header-bottom">
               <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">Marine</h1>
+                <h1 class="title2">قسم البحرية</h1>
               </div>
-              
             </div>
           </div>
         </div>
@@ -280,11 +298,11 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="page-head-blog">
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- search option start -->
               <form action="#">
                 <div class="search-option">
-                  <input type="text" placeholder="Search...">
+                  <input type="text" placeholder="بحث...">
                   <button class="button" type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
@@ -292,32 +310,32 @@
               </form>
               <!-- search option end -->
             </div>
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- recent start -->
               <div class="left-blog">
-                <h4> Our services</h4>
+                <h4> مهامنا</h4>
                 <div class="recent-post">
                   <!-- start single post -->
-                  <div class="recent-single-post">
+                  <div class="recent-single-post" style="text-align: right;">
                     <div class="post-img">
                       <a href="Marine.html">
 												   <img src="img/1/m1.jpg" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Marine.html">Regulatory visits and inspections linked to IMO conventions (SOLAS, MARPOL)</a></p>
+                      <p><a href="Marine.html">الزيارات وعمليات التفتيش التنظيمية المتعلقة باتفاقيات المنظمة البحرية الدولية (SOLAS و MARPOL و LLIC و COLREG و STCW) </a></p>
                     </div>
                   </div>
                   <!-- End single post -->
                   <!-- start single post -->
-                  <div class="recent-single-post">
+                  <div class="recent-single-post" style="text-align: right;">
                     <div class="post-img">
                       <a href="Marine.html">
 												   <img src="img/1/m2.png" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Marine.html">Monitoring of new constructions</a></p>
+                      <p><a href="Marine.html">مراقبة الإنشاءات الجديدة</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -329,19 +347,19 @@
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Marine.html"> Special, intermediate, annual, periodic, and occasional visits.</a></p>
+                      <p><a href="Marine.html"> الزيارات والتفتيش التنظيمي المتعلقة باتفاقية مكتب العمل الدولي</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
                   <!-- start single post -->
-                  <div class="recent-single-post">
+                  <div class="recent-single-post" >
                     <div class="post-img">
                       <a href="Marine.html">
 												   <img src="img/1/m4.jpg" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Marine.html">Assistive techniques</a></p>
+                      <p><a href="Marine.html">المساعدة التقنية</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -349,7 +367,6 @@
               </div>
               <!-- recent end -->
             </div>
-            
           </div>
         </div>
         <!-- End left sidebar -->
@@ -357,10 +374,11 @@
         <div class="col-md-8 col-sm-8 col-xs-12">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
+              <div class="single-blog" style="text-align: right;">
                 <div class="single-blog-img">
                   <a href="#">
 											<img src="img/1/m5.jpg" alt="">
+                                          
 										</a>
                 </div>
                 <div class="blog-meta">
@@ -368,48 +386,26 @@
                 </div>
                 <div class="blog-text">
                   <h4>
-                    <a href="#">Marine</a>
-                  </h4>
-                <p>
-                 this division is responsible for :Regulatory visits and inspections linked to IMO conventions (SOLAS, MARPOL)
-              
-Monitoring of new constructions
-Special, intermediate, annual, periodic, and occasional visits.
-Assistive techniques</p>
-              </div>
-                <span>
-                 
-										<a href="blog-details.html" class="ready-btn">Read more</a>
-									</span>
-              </div>
-            </div>
-            <!-- End single blog -->
-            
-            <!-- End single blog -->
-            <div class="col-md-12 col-sm-8 col-xs-12">
-              <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="single-blog">
-          <div class="single-blog-img">
-                                        <img src="img/1/m6.png" alt="">     
-            </div>
+											<a href="#">قسم البحرية</a>
+										</h4>
+                  <p>
+                    يتدخل الفرع البحري لـ فريطال بصفته مندوبًا للسلطات العامة ممثلة في إدارة البحرية التجارية والموانئ ولحسابه كمكتب خبير مع مشغلي الخدمة البحرية في تحقيق عمليات التفتيش القانوني السفن التي ترفع العلم الوطني ، ومراقبة الإنشاءات الجديدة ، والمساعدة الفنية ، والخبرة البحرية والتحقيقات في الحوادث والحوادث الخطيرة                  </p>
+                  <i class="fa fa-anchor"></i><B><h4>مراقبة البناء</h4></B><Br>
+                    <h8> جولات قيد الإنشاء</h8><i class="fa fa-check"></i><br>
+                    <h8>زيارات التكليف</h8><i class="fa fa-check"></i><br>
+                    <h8>كل نوع جديد من التدخل</h8><i class="fa fa-check"></i><br>
+                  
                   </div>
-                </div>
-              </div>
-          </div>
+                <span> <a href="blog-details.html" class="ready-btn">لمعرفة المزيد</a></span>
+         
         </div>
       </div>
     </div>
   </div>
 </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Blog Area -->
+<!-- End Blog Area -->
 
-  <div class="clearfix"></div>
+
 
   <!-- End marine area -->
 
@@ -424,7 +420,7 @@ Assistive techniques</p>
           <div class="slider-content text-center">
             <div class="header-bottom">
               <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">QUALITY CONTROL DIVISION</h1>
+                <h1 class="title2">قسم مراقبة الجودة و النوعية</h1>
               </div>
               
             </div>
@@ -439,11 +435,11 @@ Assistive techniques</p>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="page-head-blog">
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- search option start -->
               <form action="#">
                 <div class="search-option">
-                  <input type="text" placeholder="Search...">
+                  <input type="text" placeholder="بحث...">
                   <button class="button" type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
@@ -451,10 +447,10 @@ Assistive techniques</p>
               </form>
               <!-- search option end -->
             </div>
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- recent start -->
               <div class="left-blog">
-                <h4> Our services</h4>
+                <h4> مهامنا</h4>
                 <div class="recent-post">
                   <!-- start single post -->
                   <div class="recent-single-post">
@@ -464,7 +460,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Quality.html">INSPECTION AND MONITORING
+                      <p><a href="Quality.html">التفتيش والمراقبة
                         </a></p>
                     </div>
                   </div>
@@ -477,7 +473,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Quality.html">COMPLIANCE CONTROL
+                      <p><a href="Quality.html">مراقبة الامتثال
                        </a></p>
                     </div>
                   </div>
@@ -490,7 +486,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Quality.html">  PRODUCT APPROVAL
+                      <p><a href="Quality.html"> الموافقة على المنتج
                        </a></p>
                     </div>
                   </div>
@@ -503,7 +499,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Quality.html"> MARITIME EXPERTISE</a></p>
+                      <p><a href="Quality.html">الخبرة البحرية</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -511,8 +507,6 @@ Assistive techniques</p>
               </div>
               <!-- recent end -->
             </div>
-            
-            
           </div>
         </div>
         <!-- End left sidebar -->
@@ -520,7 +514,7 @@ Assistive techniques</p>
         <div class="col-md-8 col-sm-8 col-xs-12">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
+              <div class="single-blog" style="text-align: right;">
                 <div class="single-blog-img">
                   <a href="#">
 											<img src="img/1/q1.jpg" alt="">
@@ -532,48 +526,38 @@ Assistive techniques</p>
                 </div>
                 <div class="blog-text">
                   <h4>
-											<a href="#">QUALITY CONTROL DIVISION</a>
+											<a href="#">قسم مراقبة الجودة</a>
 										</h4>
                   <p>
-                    The quality control division is a branch of the EPE/SPA VERITAL company based in Algiers. The missions of the quality control division are to provide services covering all services linked to national and international trade operators in accordance with laws, specifications and/or contractual forms. The quality control division is made up of multidisciplinary experts who can intervene at any time, both in Algeria and abroad with suppliers before shipping the goods.
-                  </p><br> 
-                  <h4>PROCEDURES OPERATIONELLES</h4><br>
-                  <p>In their interventions, the experts use operational procedures established by the technical staff of the division, approved by the company's General Management and regularly verified by the quality assessors of the accrediting body, in particular:
-                  </p>
+                    قسم مراقبة الجودة هو فرع من شركة فريطال EPE / SPA  ومقرها الجزائر العاصمة. تتمثل مهام قسم مراقبة الجودة في تقديم الخدمات التي تغطي جميع الخدمات المتعلقة بمشغلي التجارة الوطنية والدولية وفقًا للقوانين والمواصفات و / أو الأشكال التعاقدية. يتكون قسم مراقبة الجودة من خبراء متعددي التخصصات يمكنهم التدخل في أي وقت ، سواء في الجزائر أو في الخارج مع الموردين قبل شحن البضائع                  </p><br> 
+                     <h4>الإجراءات التشغيلية</h4><br>
+                  <p>يستخدم الخبراء في تدخلاتهم الإجراءات التشغيلية التي وضعها الموظفون الفنيون في القسم المعتمد من قبل الإدارة العامة للشركة والتي يتم فحصها بانتظام من قبل مقيمي الجودة في هيئة الاعتماد ، وعلى وجه الخصوص:</p>
                   
-                      <i class="fa fa-check" ></i> <b>  Procedure to approve the product.</b><br>
-                      <i class="fa fa-check" ></i> <b>Procedure to monitor compliance. </b><br>
-                      <i class="fa fa-check" ></i> <b> Procedure inspect monitor loading, unloading and unloading.</b><br>
-                      <i class="fa fa-check" ></i> <b>Procedure for assessing damage and damage to products.</b><br>
-                      <i class="fa fa-check" ></i> <b> Procedure for taking samples for analysis.</b>
+                      <b>	إجراء الموافقة على المنتج</b><i class="fa fa-check" ></i><br>
+                      <b>	إجراء للتحقق من الامتثال</b><i class="fa fa-check" ></i><br>
+                      <b>فحص الإجراء ومراقبة التحميل والتفريغ والتجريد</b><i class="fa fa-check" ></i><br>
+                      <b>إجراء لتقييم الأضرار والأضرار التي لحقت بالمنتجات</b><i class="fa fa-check" ></i><br>
+                      <b>إجراء أخذ العينات للتحليل</b><i class="fa fa-check" ></i><br>
+                    </div>
+                    <br>
                       <br>
-                      </div>
-                      <br>
-                      <br>
-                      <div class="blog-text">
-                        <h4>MATERIALS AND MEANS</h4>  
-                        <p>To respond quickly to our customers' requests and to respect their contractual requirements, the Quality Control Division is equipped with all the material resources necessary and useful for its activities.</p>
+                      <div class="blog-text" style="text-align: right;">
+                        <h4>المواد والوسائل</h4>  
+                        <p>للاستجابة بسرعة لطلبات عملائنا وتلبية متطلباتهم التعاقدية ، يمتلك قسم مراقبة الجودة جميع الموارد المادية اللازمة والمفيدة لأنشطته</p>
                       </div>
                 <span>
-              
                  
-										<a href="blog-details.html" class="ready-btn">Read more</a>
+									<a href="blog-details.html" class="ready-btn">لمعرفة المزيد</a>
 									</span>
               </div>
             </div>
             <!-- End single blog -->
-            
-            <!-- End single blog -->
-            
-           
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- End Blog Area -->
-
-  <div class="clearfix"></div>
 
   <!--end Q area -->
   <!--start industry area-->
@@ -586,7 +570,7 @@ Assistive techniques</p>
           <div class="slider-content text-center">
             <div class="header-bottom">
               <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">INDUSTRY DIVISION</h1>
+                <h1 class="title2">قسم الصناعة</h1>
               </div>
               
             </div>
@@ -601,11 +585,11 @@ Assistive techniques</p>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="page-head-blog">
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- search option start -->
               <form action="#">
                 <div class="search-option">
-                  <input type="text" placeholder="Search...">
+                  <input type="text" placeholder="بحث...">
                   <button class="button" type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
@@ -613,10 +597,10 @@ Assistive techniques</p>
               </form>
               <!-- search option end -->
             </div>
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;" translate="yes">
               <!-- recent start -->
               <div class="left-blog">
-                <h4> Our services</h4>
+                <h4> مهامنا</h4>
                 <div class="recent-post">
                   <!-- start single post -->
                   <div class="recent-single-post">
@@ -626,7 +610,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Industry.html">INSPECTION OF PUBLIC WORKS EQUIPMENT
+                      <p><a href="Industry.html">فحص معدات الأشغال العامة
                         </a></p>
                     </div>
                   </div>
@@ -639,7 +623,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Industry.html">CALIBRATION
+                      <p><a href="Industry.html">معايرة
                         </a></p>
                     </div>
                   </div>
@@ -652,7 +636,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Industry.html"> MONITORING NEW PROJECTS
+                      <p><a href="Industry.html"> مراقبة المشاريع الجديدة
                         </a></p>
                     </div>
                   </div>
@@ -665,7 +649,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Industry.html">MONITORING RENOVATION WORK OF AN INSTALLATION OR EQUIPMENT</a></p>
+                      <p><a href="Industry.html">مراقبة أعمال تجديد المنشأة أو المعدات</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -674,37 +658,6 @@ Assistive techniques</p>
               <!-- recent end -->
             </div>
             
-            <div class="single-blog-page">
-              <div class="left-tags blog-tags">
-                <div class="popular-tag left-side-tags left-blog">
-                  <h4>popular tags</h4>
-                  <ul>
-                    <li>
-                      <a href="Aero.html">Aeronautics</a>
-                    </li>
-                    <li>
-                      <a href="Marine.html">Marine</a>
-                    </li>
-                    <li>
-                      <a href="Quality.html">Quality Control</a>
-                    </li>
-                    <li>
-                      <a href="Industry.html">Industry</a>
-                    </li>
-                    <li>
-                      <a href="Rail.html">Rail and Guided Transport</a>
-                    </li>
-                    <li>
-                      <a href="Containers.html">Containers Control & Verification </a>
-                    </li>
-                    <li>
-                      <a href="Elevators.html">Elevators Technical Inspection</a>
-                    </li>
-                  
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <!-- End left sidebar -->
@@ -712,7 +665,7 @@ Assistive techniques</p>
         <div class="col-md-8 col-sm-8 col-xs-12">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
+              <div class="single-blog" style="text-align: right;">
                 <div class="single-blog-img">
                   <a href="index2.html">
 											<img src="img/1/i2.png" alt="">
@@ -724,63 +677,47 @@ Assistive techniques</p>
                 </div>
                 <div class="blog-text">
                   <h4>
-											<a href="#">INDUSTRY DIVISION</a>
+											<a href="#">قسم الصناعة</a>
 										</h4>
                   <p>
-                    VERITAL INDUSTRIE, located on the five sites of Algiers, Oran, Annaba, Béjaïa and Hassi-Messaoud, provides technical assistance services for conformity control, expertise and calibration, intended to promote the safety of people and property . The services are carried out in accordance with the regulations in force and national and international standards in this area. Activities are carried out by a team of multidisciplinary experts, working in several fields both nationally and internationally.
-                  </p>
+                    تقدم شركة VERITAL INDUSTRIE، التي تقع في مواقعها الخمسة في الجزائر العاصمة ووهران وعنابة وبجاية وحاسي مسعود، خدمات المساعدة التقنية لمراقبة المطابقة والخبرة والمعايرة، بهدف تعزيز سلامة الأشخاص والممتلكات. يتم تنفيذ الخدمات وفقًا للوائح المعمول بها والمعايير الوطنية والدولية في هذا المجال. يتم تنفيذ الأنشطة من قبل فريق من الخبراء متعددي التخصصات، الذين يعملون في العديد من المجالات على الصعيدين الوطني والدولي. </p>
                 </div>
                 <br>
                 <div class="blog-text">
                   <h4>
-                    PERIODIC REGULATORY SAFETY CONTROL
+                    مراقبة السلامة التنظيمية الدورية
                   </h4>
-                 <ul><li><i class="fa fa-check"></i> <b>ELECTRICAL APPLIANCES (APE):</b>
+                 <ul><li> <b>:(APE)الأجهزة الكهربائية </b><i class="fa fa-check"></i> 
                 <p>
-                  Regulatory technical visit, inspection, earth measurements, insulation measurements, dielectric analysis, verification and testing of safety provisions.
+                  الزيارة الفنية التنظيمية والتفتيش وقياسات الأرض وقياسات العزل وتحليل العزل الكهربائي والتحقق واختبار أحكام السلامة.
                 </p></li>
-                <li><i class="fa fa-check"></i> <b>GAS PRESSURE APPLIANCES (APG):</b>
+                <li><b>:(APG)أجهزة ضغط الغاز</b><i class="fa fa-check"></i> 
                   <p>
-                    Regulatory technical visit, ultrasound survey, endoscopy and non-destructive testing if necessary.
-                  </p></li>
-                  <li><i class="fa fa-check"></i> <b>VAPOR PRESSURE DEVICES (APV):</b>
+                    الزيارة الفنية التنظيمية والمسح بالموجات فوق الصوتية والتنظير والاختبارات غير المدمرة إذا لزم الأمر.</p></li>
+                  <li><b>:(APV)أجهزة ضغط البخار</b><i class="fa fa-check"></i> 
                     <p>
-                      Regulatory technical visit, ultrasound survey, endoscopy and non-destructive testing if necessary.
-                    </p></li>
-                    <li><i class="fa fa-check"></i> <b>LIFTING DEVICES (APL): </b>
-                      <p>
-                        Regulatory technical visit, inspection, static and dynamic tests, control and testing of safety devices.
-                      </p></li>
+                      الزيارة الفنية التنظيمية والمسح بالموجات فوق الصوتية والتنظير والاختبارات غير المدمرة إذا لزم الأمر. </p></li>                    <li><i class="fa fa-check"></i> <b>APPAREILS DE LEVAGE (APL)</b>
+                      <p>الزيارة الفنية التنظيمية والتفتيش والاختبارات الثابتة والديناميكية ومراقبة واختبار أجهزة السلامة.</p></li>
                                     
                 </ul>
                 </div>
                 <span>
                  
-										<a href="blog-details.html" class="ready-btn">Read more</a>
-									</span>
-              </div>
+                  <a href="blog-details.html" class="ready-btn">لمعرفة المزيد</a>
+                </span>
             </div>
-            <!-- End single blog -->
-            
-            <!-- End single blog -->
-            
-            <div class="col-md-8 col-sm-8 col-xs-12">
-                <div class="row">
-                  <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="single-blog">
-                      <div class="single-blog-img">
-                        <a href="index2.html">
-                                                  <img src="img/1/i1.png" alt="">
-                                                
-                                              </a> </div></div></div></div></div>
           </div>
+          <!-- End single blog -->
+          
+     
+         
         </div>
       </div>
     </div>
   </div>
-  <!-- End Blog Area -->
+</div>
+<!-- End Blog Area -->
 
-  <div class="clearfix"></div>
   <!--end industry area -->
   <!--start Rail area-->
   <div id="Rail"class="slider-area"></div>
@@ -792,7 +729,7 @@ Assistive techniques</p>
           <div class="slider-content text-center">
             <div class="header-bottom">
               <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">RAIL & GUIDED TRANSPORT DIVISION</h1>
+                <h1 class="title2">قسم السكك الحديدية والنقل الموجه</h1>
               </div>
               
             </div>
@@ -811,7 +748,7 @@ Assistive techniques</p>
               <!-- search option start -->
               <form action="#">
                 <div class="search-option">
-                  <input type="text" placeholder="Search...">
+                  <input type="text" placeholder="... بحث">
                   <button class="button" type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
@@ -821,19 +758,21 @@ Assistive techniques</p>
             </div>
             <div class="single-blog-page">
               <!-- recent start -->
-              <div class="left-blog">
-                <h4> Our services</h4>
+              <div class="left-blog " style="text-align: right;">
+                <h4> خدماتنا</h4>
                 <div class="recent-post">
                   <!-- start single post -->
                   <div class="recent-single-post">
                     <div class="post-img">
                       <a href="Rail.html">
-												   <img src="img/slider/s7.jpg" alt="">
+												   <img src="img/slider/s3.jpg" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Rail.html">ASSISTANCE AND ADVICE FOR OPERATORS
-                        </a></p>
+                      <p><a href="Rail.html">
+                        إجراء الخبرة الفنية
+
+                      </a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -845,7 +784,8 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Rail.html">Monitoring of new constructions</a></p>
+                      <p><a href="Rail.html">المساعدة و الاستشارة  للمشغلين
+                        </a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -857,7 +797,8 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Rail.html"> Special, intermediate, annual, periodic, and occasional visits.</a></p>
+                      <p><a href="Rail.html">
+                        الإشراف على المشاريع ومراقبتها</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -869,7 +810,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Rail.html">Assistive techniques</a></p>
+                      <p><a href="Rail.html">تقنيات المراقبة </a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -877,80 +818,73 @@ Assistive techniques</p>
               </div>
               <!-- recent end -->
             </div>
-            
-          
           </div>
         </div>
         <!-- End left sidebar -->
         <!-- Start single blog -->
-         <!-- Start single blog -->
-         <div class="col-md-8 col-sm-8 col-xs-12">
+        <div class="col-md-8 col-sm-8 col-xs-12">
           <div class="row">
+            <div class="single-blog" style="text-align: right;">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
+              <div class="single-blog align-right">
                 <div class="single-blog-img">
                   <a href="index2.html">
 											<img src="img/1/r3.jpg" alt="">
                                           
 										</a>
                 </div>
-                <div class="blog-meta">
+                <div class="blog-meta ">
                   <span class="comments-type">
                 </div>
-                <div class="blog-text">
+                <div class="blog-text ">
                   <h4>
-											<a href="#">RAIL AND GUIDED TRANSPORT DIVISION</a>
+											<a href="#">قسم السكك الحديدية والنقل الموجه</a>
 										</h4>
                   <p>
-                    As part of the missions devolved to the Ministry of Public Works and Transport for the issuance of operating authorizations for Guided Passenger Transport Systems, and in compliance with the regulated attributions applicable to approved qualified organizations (OQA), VERITAL is approved to carry out safety assessment missions for guided passenger transport. In its field of expertise, VERITAL provides in Algeria and abroad the provision and implementation of control, verification, expertise, analysis of potential problems, technical assistance and evaluation of the security of infrastructure of rail transport systems and guided.
-                  </p>
+                    كجزء من المهام الموكلة إلى وزارة الأشغال العامة والنقل لإصدار تراخيص التشغيل لأنظمة نقل الركاب الموجهة، ووفقًا للصلاحيات المنظمة المطبقة على المنظمات المؤهلة المعتمدة (OQA)، تمت الموافقة على VERITAL لإجراء تقييم السلامة مهمات لنقل الركاب المصحوبة بمرشدين. في مجال خبرتها، توفر شركة VERITAL، في الجزائر والخارج، توفير وتنفيذ المراقبة والتحقق والخبرة وتحليل المشاكل المحتملة والمساعدة التقنية وتقييم أمن البنية التحتية لأنظمة النقل بالسكك الحديدية والموجهة</p>
                 </div>
                 <div class="single-blog-img">
                   <a href="index2.html"> <img src="img/1/Algier_Metro1.jpg" alt=""> </a> </div>
                 <div>
-                  <br><h5>TECHNICAL CONTROL OF RAIL AND GUIDED TRANSPORT IS BASED ON:</h5>
-                  <br><h5>MONITORING GUIDED TRANSPORT FACILITIES</h5>
-                  <ul><li><i class="fa fa-check"></i> Conducting evidentiary examinations before putting STGs into public operation.
-                    </li>
-                    <li><i class="fa fa-check"></i>Audit and validation of all operations intended to verify the usability of STG installations in view of their reception.
-                    </li>
-                      <li><i class="fa fa-check"></i> Establishment and delivery of technical opinions for the operation of installations.</li></ul>
+                  <br><h5>تعتمد المراقبة الفنية للسكك الحديدية والنقل الموجه على</h5>
+                  <br><h5>مراقبة مرافق النقل الموجهة</h5>
+                  <ul><li> موضع التنفيذ العام STG إجراء الفحوصات الاختبارية قبل وضع موظفي   
+                    <i class="fa fa-check"></i></li>
+                    <li>في ضوء استقبالها STG تدقيق والتحقق من صحة جميع العمليات التي تهدف إلى التحقق من قابلية تشغيل منشآت<i class="fa fa-check"></i> </li>
+                      <li>إنشاء وإصدار المشورة الفنية لتشغيل المرافق<i class="fa fa-check"></i></li></ul>
                 </div>
-                <br><div><h5>SUPERVISION AND MONITORING OF PROJECTS IN THE CONTEXT OF NEW INSTALLATIONS OR TECHNOLOGICAL UPGRADE OF EXISTING EQUIPMENT
-                        </h5>
-                        <br><b><h5>CONTRIBUTION TO THE PROMOTION AND PRACTICE OF TECHNIQUES RELATING TO SAFETY IN GUIDED TRANSPORT FACILITIES
-                        </h5></b>
-                        <ul><li><i class="fa fa-check"></i>Technical control of STGs, their characteristics as well as the safety of their use or their implementation by all appropriate means such as visual inspection, sampling, laboratory examinations, tests and tests.
+                <br><div><h5>الإشراف والمراقبة على المشاريع في إطار التركيبات الجديدة أو التطوير التكنولوجي للمعدات الموجودة
+                       </h5>
+                        <br><b><h5>
+                          المساهمة في تعزيز وممارسة تقنيات السلامة في مرافق النقل الموجهة                        </h5></b>
+                        <ul><li>وخصائصها وسلامة استخدامها أو تنفيذها بجميع الوسائل المناسبة مثل الفحص البصري وأخذ العينات والفحوصات المخبرية والاختبارات والتجارب  TSG الرقابة الفنية على مجموعات <i class="fa fa-check"></i></li>
+                        <li>TSG التقييم الشامل لأمن مجموعات <i class="fa fa-check"></i>
                         </li>
-                        <li><i class="fa fa-check"></i>Overall safety assessment of STG.
-                        </li>
-                          <li><i class="fa fa-check"></i> examination of the design of plans, calculation notes and specifications of installations, materials, equipment, transport vehicles and specialized works.
-                          <p>-monitoring of equipment, transport vehicles and specialized structures</p>
-                          <p>-monitoring of construction, manufacturing, repair and transformation operations of guided transport installations</p>
+                          <li>فحص تصميم المخططات والملاحظات الحسابية ومواصفات التركيبات والمواد والمعدات وسيارات النقل والأعمال المتخصصة<i class="fa fa-check"></i> 
+                          <p>مراقبة المعدات وعربات النقل والأعمال المتخصصة </p>
+                          <p>الإشراف على عمليات البناء والتصنيع والإصلاح والتحويل لمنشآت النقل الموجهة </p>
                           </li>
                         </ul>
               </div>
-              <div><h5>ASSISTANCE AND ADVICE TO OPERATORS AND SERVICES OF THE MINISTRY OF TRANSPORT DTTU (DIRECTION OF LAND AND URBAN TRANSPORT)
+              <div><h5>(مديرية النقل البري والحضري)DTTU المساعدة والمشورة لمشغلي وأقسام وزارة النقل   
 
-              </h5> <br><h5>CONDUCTING TECHNICAL EXPERTISE ON RAIL AND GUIDED TRANSPORT FACILITIES</h5></div>
+              </h5> <br><h5>إجراء الخبرة الفنية على السكك الحديدية وتركيبات النقل الموجه</h5></div>
               <div class="single-blog-img">
-                <a href="index2.html"> <img src="img/1/12.png" alt=""> </a> </div>
+                <a href="index2.html"> <img src="img/1/12.png" alt=""> </a> <span>
+                  <a href="blog-details.html" class="ready-btn">لمعرفة المزيد </a>
+                </span></div>
               <div>
-                <span>
-                 
-										<a href="blog-details.html" class="ready-btn">Read more</a>
-									</span>
+                
               </div>
             </div>
-            <!-- End single blog -->
+          </div>
+          <!-- End single blog -->
+        </div>
       </div>
     </div>
   </div>
-  </div>
-  </div>
-  <!-- End Blog Area -->
-
-  <div class="clearfix"></div>
+</div>
+<!-- End Blog Area -->
   <!--end rail area-->
   <!--start con area-->
   <div id="Containers" class="slider-area"></div>
@@ -962,7 +896,7 @@ Assistive techniques</p>
           <div class="slider-content text-center">
             <div class="header-bottom">
               <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">Containers Control & Verification DIVISION</h1>
+                <h1 class="title2">قسم مراقبة الحاويات والتحقق منها</h1>
               </div>
               
             </div>
@@ -977,11 +911,11 @@ Assistive techniques</p>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="page-head-blog">
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- search option start -->
               <form action="#">
                 <div class="search-option">
-                  <input type="text" placeholder="Search...">
+                  <input type="text" placeholder="بحث...">
                   <button class="button" type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
@@ -989,10 +923,10 @@ Assistive techniques</p>
               </form>
               <!-- search option end -->
             </div>
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- recent start -->
               <div class="left-blog">
-                <h4> Our services</h4>
+                <h4> مهامنها</h4>
                 <div class="recent-post">
                   <!-- start single post -->
                   <div class="recent-single-post">
@@ -1002,19 +936,19 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Containers.html">Regulatory visits and inspections linked to IMO conventions (SOLAS, MARPOL)</a></p>
+                      <p><a href="Containers.html"> (SOLAS, MARPOL)الزيارات وعمليات التفتيش التنظيمية المرتبطة باتفاقيات المنظمة البحرية الدولية</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
                   <!-- start single post -->
                   <div class="recent-single-post">
                     <div class="post-img">
-                      <a href="Industry.html">
+                      <a href="Containers.html">
 												   <img src="img/1/i3.jpg" alt="">
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Containers.html">Monitoring of new constructions</a></p>
+                      <p><a href="Containers.html">مراقبة الإنشاءات الجديدة</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -1026,7 +960,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Containers.html"> Special, intermediate, annual, periodic, and occasional visits.</a></p>
+                      <p><a href="Containers.html"> الزيارات الخاصة والمتوسطة والسنوية والدورية والعرضية</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -1038,7 +972,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Containers.html">Assistive techniques</a></p>
+                      <p><a href="Containers.html">تقنيات المساعدة</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -1046,8 +980,6 @@ Assistive techniques</p>
               </div>
               <!-- recent end -->
             </div>
-            
-            
           </div>
         </div>
         <!-- End left sidebar -->
@@ -1055,7 +987,7 @@ Assistive techniques</p>
         <div class="col-md-8 col-sm-8 col-xs-12">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
+              <div class="single-blog" style="text-align: right;">
                 <div class="single-blog-img">
                   <a href="index2.html">
 											<img src="img/slider/s4.jpg" alt="">
@@ -1067,30 +999,23 @@ Assistive techniques</p>
                 </div>
                 <div class="blog-text">
                   <h4>
-											<a href="#">Containers Control & Verification DIVISION</a>
+											<a href="#">قسم مراقبة الحاويات والتحقق منها</a>
 										</h4>
                   <p>
-                   this division is responsible for :</p>
+                    هذا القسم مسؤول عن :</p>
                 </div>
                 <span>
                  
-										<a href="blog-details.html" class="ready-btn">Read more</a>
+									<a href="blog-details.html" class="ready-btn">لمعرفة المزيد</a>
 									</span>
               </div>
             </div>
-            <!-- End single blog -->
-            
-            <!-- End single blog -->
-            
-        
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- End Blog Area -->
-
-  <div class="clearfix"></div>
   <!--end con area-->
   <!--start Elv area-->
   <div id="Elevators" class="slider-area"></div>
@@ -1102,7 +1027,7 @@ Assistive techniques</p>
           <div class="slider-content text-center">
             <div class="header-bottom">
               <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">Elevators Technical Inspection  DIVISION</h1>
+                <h1 class="title2">قسم الفحص الفني للمصاعد</h1>
               </div>
               
             </div>
@@ -1117,11 +1042,11 @@ Assistive techniques</p>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="page-head-blog">
-            <div class="single-blog-page">
+            <div class="single-blog-page" translate="yes" style="text-align: right;">
               <!-- search option start -->
               <form action="#">
                 <div class="search-option">
-                  <input type="text" placeholder="Search...">
+                  <input type="text" placeholder="بحث...">
                   <button class="button" type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>
@@ -1129,10 +1054,10 @@ Assistive techniques</p>
               </form>
               <!-- search option end -->
             </div>
-            <div class="single-blog-page">
+            <div class="single-blog-page" style="text-align: right;">
               <!-- recent start -->
               <div class="left-blog">
-                <h4> Our services</h4>
+                <h4> مهامنا</h4>
                 <div class="recent-post">
                   <!-- start single post -->
                   <div class="recent-single-post">
@@ -1142,7 +1067,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Elevators.html">Regulatory visits and inspections linked to IMO conventions (SOLAS, MARPOL)</a></p>
+                      <p><a href="Elevators.html"> مهمة رقم01</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -1154,7 +1079,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Elevators.html">Monitoring of new constructions</a></p>
+                      <p><a href="Elevators.html">مهمة رقم 02</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -1166,7 +1091,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Elevators.html"> Special, intermediate, annual, periodic, and occasional visits.</a></p>
+                      <p><a href="Elevators.html"> الزيارات الخاصة والمتوسطة والسنوية والدورية والعرضية.</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -1178,7 +1103,7 @@ Assistive techniques</p>
 												</a>
                     </div>
                     <div class="pst-content">
-                      <p><a href="Elevators.html">Assistive techniques</a></p>
+                      <p><a href="Elevators.html">تقنية المساعدة</a></p>
                     </div>
                   </div>
                   <!-- End single post -->
@@ -1186,9 +1111,7 @@ Assistive techniques</p>
               </div>
               <!-- recent end -->
             </div>
-            
-            
-          </div>
+         </div>
         </div>
         <!-- End left sidebar -->
         <!-- Start single blog -->
@@ -1207,236 +1130,250 @@ Assistive techniques</p>
                 </div>
                 <div class="blog-text">
                   <h4>
-											<a href="#">Elevators Technical Inspection  DIVISION</a>
+											<a href="#">قسم الفحص الفني للمصاعد</a>
 										</h4>
                   <p>
-                   this division is responsible for :</p>
+                    هذا القسم مسؤول عن:</p>
                 </div>
                 <span>
                  
-										<a href="blog-details.html" class="ready-btn">Read more</a>
-									</span>
-              </div>
+                  <a href="blog-details.html" class="ready-btn">اقرأ المزيد</a>
+                </span>
             </div>
-            <!-- End single blog -->
-            
-          
-            
-            
           </div>
+          <!-- End single blog -->
         </div>
       </div>
     </div>
   </div>
-  <!-- End Blog Area -->
-
-  <div class="clearfix"></div>
+</div>
+<!-- End Blog Area -->
   <!--end elv area-->
   
   <!-- Start Suscrive Area -->
-  
-  <div class="slider-container">
-    <div class="slider">
-      <div class="slide">
-        <img src="img/1/1.png" alt="" />
-        <img src="img/1/2.png" alt="" />
-        <img src="img/1/24-225x202.png" alt="" />
-        <img src="img/1/25-240x202.png" alt="" />
-        <img src="img/1/27-231x202.png" alt="" />
-        <img src="img/1/29-225x202.png" alt="" />
-        <img src="img/1/30-320x202.png" alt="" />
-        <!-- Duplicate the first image to create a loop -->
-        <img src="img/1/1.png" alt="" />
-      </div>
-    </div>
-  </div>
-  
- 
-  <!-- End Suscrive Area -->
-  <!-- Start contact Area -->
-  <div id="contact" class="contact-area">
-    <div class="contact-inner area-padding">
-      <div class="contact-overly"></div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Contact us</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-mobile"></i>
-                <a href="tel:+21323701727"><P>Call us at +213 (0) 23 70 17 27</P></a>
-                <p>
-                  Fax: +213 (0) 23 70 17 28<br>
-                  <span>Sunday- Thursday (8am-4pm)</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-envelope-o"></i>
-                <a href="mailto:dg@verital.dz"> <p>dg@verital.dz</p></a>
-                <p>
-                  <a href="https://www.verital.dz " target="_blank"><p> Web:  www.verital.dz </p></a>
-                 
-                
-              </div>
-            </div>
-          </div>
-          <!-- Start contact icon column -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-map-marker"></i>
-                <a href="https://www.google.com/maps/search/38,+Lotissement+Pons+Kouba,+Alger" target="_blank"><p>
-                  38, Lotissement Pons<br>
-                  <span>Kouba – Alger</span>
-                </p></a>
-
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-
-          <!-- Start Google Map -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <!-- Start Map -->
-              <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
-            <!-- End Map -->
-          </div>
-          <!-- End Google Map -->
-
-          <!-- Start  contact -->
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="form contact-form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
-          </div>
-          <!-- End Left contact -->
+  <div id="Suscrive" class="section-headline text-center">
+    
+    <h2>وضعوا ثقتهم بنا </h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="img/1/1.png" alt="" />
+          <img src="img/1/2.png" alt="" />
+          <img src="img/1/24-225x202.png" alt="" />
+          <img src="img/1/25-240x202.png" alt="" />
+          <img src="img/1/27-231x202.png" alt="" />
+          <img src="img/1/29-225x202.png" alt="" />
+          <img src="img/1/30-320x202.png" alt="" />
+          <img src="img/client/1.png" alt="" />
+          <img src="img/client/3.png" alt="" />
+          <img src="img/client/4.png" alt="" /><img src="img/client/5.png" alt="" />
+          <img src="img/client/6.png" alt="" /><img src="img/client/7.png" alt="" />
+          <img src="img/client/8.png" alt="" /><img src="img/client/9.png" alt="" />
+          <img src="img/client/10.png" alt="" /><img src="img/client/11.png" alt="" />
+          <img src="img/client/12.png" alt="" /><img src="img/client/13.png" alt="" />
+          <img src="img/client/14.png" alt="" /><img src="img/client/15.png" alt="" />
+          <img src="img/client/16.png" alt="" /><img src="img/client/17.png" alt="" />
+          <img src="img/client/18.png" alt="" /><img src="img/client/19.png" alt="" />
+          <img src="img/client/20.png" alt="" /><img src="img/client/21.png" alt="" />
+          <img src="img/client/22.png" alt="" /><img src="img/client/23.png" alt="" />
+          <img src="img/client/24.png" alt="" /><img src="img/client/25.png" alt="" />
+          <img src="img/client/26.png" alt="" /><img src="img/client/27.png" alt="" />
+          <img src="img/client/28.png" alt="" /><img src="img/client/29.png" alt="" />
+          <img src="img/client/30.png" alt="" />
+          <img src="img/client/31.png" alt="" /><img src="img/client/32.png" alt="" /> <!-- Duplicate the first image to create a loop -->
+          <img src="img/1/1.png" alt="" />
         </div>
       </div>
     </div>
   </div>
-  <!-- End Contact Area -->
-  
 
- <!-- Start Footer bottom Area -->
- <footer>
-  <div class="footer-area align-right">
-    <div class="container">
-      <div class="row ">
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="footer-content align-right">
-            <div class="footer-head">
-              <div class="footer-logo">
-                <a class="navbar-brand page-scroll sticky-logo" href="index.html" style="padding: 5px 15px; display: flex; align-items: center;">
-                  <img src="img/logo.png" alt="" title="Verital" class="img-fluid" style="max-height: 50px;">
-              </a>
-              </div>
 
-              <p>تحتل دورا استراتيجيا في الخبرة الجزائرية. وبالاعتماد على خبرتها، تستعد شركة VERITAL لمواجهة التحدي الطموح والواقعي المتمثل في كونها الشركة العامة المعيارية في الجزائر في مجالات الأمن والجودة والسلامة</p>
-              <div class="footer-icons">
-                <ul>
-                  <li>
-                    <a href="https://web.facebook.com/verital.officiel"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/@CommunicationVerital"><i class="fa fa-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a href="direction.commerciale@verital.dz"><i class="fa fa-money"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.verital.dz"><i class="fa fa-globe"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end single footer -->
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="footer-content">
-            <div class="footer-head">
-              <h4>معلومات</h4>
-              <p>
-               لمزيد من المعلومات
-              </p>
-              <div class="footer-contacts ">
-                <p> +213 23 70 17 27<span>:هاتف</span></p>
-                <p> dg@verital.dz<span>:البريد الالكتروني</span></p>
-                <p><span>ساعات العمل </span>  من الساعة 08:00 سا الى غاية 16:00 سا </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end single footer -->
-        <div class="col-md-4 col-sm-4 col-xs- ">
-          <div class="footer-content">
-              <div class="footer-head">
-                  <h4>فيس بوك</h4>
-                  <div class="flicker-img">
-                      <a href="https://web.facebook.com/photo/?fbid=846642007253165&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/404685292_846642687253097_51545038631899646_n.jpg" alt=""></a>
-                      <a href="https://web.facebook.com/photo/?fbid=846641637253202&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/404783233_846642427253123_6267874654238108114_n.jpg" alt=""></a>
-                      <a href="https://web.facebook.com/photo/?fbid=904145414836157&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/428705684_904534434797255_3724049027745603481_n.jpg" alt=""></a>
-                      <a href="https://web.facebook.com/photo/?fbid=904145414836157&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/428706987_904145478169484_2777455238918757462_n.jpg" alt=""></a>
-                      <a href="https://web.facebook.com/photo/?fbid=904145414836157&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/428711023_904534151463950_3731252521718504558_n.jpg" alt=""></a>
-                      <a href="https://web.facebook.com/photo/?fbid=904145414836157&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/429532026_904534388130593_404600344822068039_n.jpg" alt=""></a>
-                  </div>
-              </div>
-          </div>
-      </div>
+
+<!-- End Suscrive Area -->
+<!-- Start contact Area -->
+<div id="contact" class="contact-area">
+<div class="contact-inner area-padding">
+<div class="contact-overly"></div>
+<div class="container ">
+<div class="row">
+<div class="col-md-12 col-sm-12 col-xs-12">
+  <div class="section-headline text-center">
+    <h2>إتصلوا بنا </h2>
+  </div>
+</div>
+</div>
+<div class="row">
+<!-- Start contact icon column -->
+<div class="col-md-4 col-sm-4 col-xs-12">
+  <div class="contact-icon text-center">
+    <div class="single-icon">
+      <i class="fa fa-mobile"></i>
+      <a href="tel:+21323701727"><P>عبر الهاتف : +213 (0) 23 70 17 27</P></a>
+      <p>
+       عبر الفاكس : +213 (0) 23 70 17 28<br>
+        <span>(من الساعة  8/ الى 16)الاحد الى الخميس</span>
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Start contact icon column -->
+<div class="col-md-4 col-sm-4 col-xs-12">
+  <div class="contact-icon text-center">
+    <div class="single-icon">
+      <i class="fa fa-envelope-o"></i>
+      <a href="mailto:dg@verital.dz"> <p>dg@verital.dz</p></a>
+      <p>
+        <a href="https://www.verital.dz " target="_blank"><p> Web:  www.verital.dz </p></a>
+       
       
-        </div>
+    </div>
+  </div>
+</div>
+<!-- Start contact icon column -->
+<div class="col-md-4 col-sm-4 col-xs-12">
+  <div class="contact-icon text-center">
+    <div class="single-icon">
+      <i class="fa fa-globe"></i>
+      <a href="https://www.google.com/maps/search/38,+Lotissement+Pons+Kouba,+Alger" target="_blank"><p>
+        38، تقسيم بونس<br>
+        <span>القبة - الجزائر العاصمة </span>
+      </p></a>
+
+      
+    </div>
+  </div>
+</div>
+</div>
+<div class="row">
+
+<!-- Start Google Map -->
+<div class="col-md-6 col-sm-6 col-xs-12">
+  <!-- Start Map -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21888.55382199453!2d3.0606491!3d36.7146951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad0afd9463ab%3A0xa88e2f6cd6697730!2sVERITAL%20-%20Direction%20G%C3%A9n%C3%A9rale!5e1!3m2!1sen!2sdz!4v1714042568588!5m2!1sen!2sdz" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- End Map -->
+</div>
+<!-- End Google Map -->
+
+<!-- Start  contact -->
+<div class="col-md-6 col-sm-6 col-xs-12">
+  <div class="form contact-form">
+    <div id="sendmessage">!تم الارسال  شكرا </div>
+    <div id="errormessage"></div>
+    <form action="" method="post" role="form" class="contactForm">
+      <div class="form-group">
+        <input type="text" name="name" class="form-control" id="name" placeholder="votre nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+        <div class="validation"></div>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" name="email" id="email" placeholder="votre Email" data-rule="email" data-msg="Please enter a valid email" />
+        <div class="validation"></div>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+        <div class="validation"></div>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="S'il te plaît, écris quelque chose pour nous" placeholder="Message"></textarea>
+        <div class="validation"></div>
+      </div>
+      <div class="text-center"><button type="submit">أرسل رسالة</button></div>
+    </form>
+  </div>
+</div>
+<!-- End Left contact -->
+</div>
+</div>
+</div>
+</div>
+<!-- End Contact Area -->
+
+
+<!-- Start Footer bottom Area -->
+<footer>
+<div class="footer-area align-right">
+<div class="container">
+<div class="row ">
+<div class="col-md-4 col-sm-4 col-xs-12">
+  <div class="footer-content align-right">
+    <div class="footer-head">
+      <div class="footer-logo">
+        <a class="navbar-brand page-scroll sticky-logo" href="index.html" style="padding: 5px 15px; display: flex; align-items: center;">
+          <img src="img/logo.png" alt="" title="Verital" class="img-fluid" style="max-height: 50px;">
+      </a>
+      </div>
+
+      <p>تحتل دورا استراتيجيا في الخبرة الجزائرية. وبالاعتماد على خبرتها، تستعد شركة VERITAL لمواجهة التحدي الطموح والواقعي المتمثل في كونها الشركة العامة المعيارية في الجزائر في مجالات الأمن والجودة والسلامة</p>
+      <div class="footer-icons">
+        <ul>
+          <li>
+            <a href="https://web.facebook.com/verital.officiel"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@CommunicationVerital"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="direction.commerciale@verital.dz"><i class="fa fa-money"></i></a>
+          </li>
+          <li>
+            <a href="https://www.verital.dz"><i class="fa fa-globe"></i></a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="footer-area-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="copyright text-center">
-            <p>
-              &copy; حقوق النشر <strong>  شركة فريطال </strong>كل الحقوق محفوظة - 2024-
-            </p>
-          </div>
-          
-        </div>
+</div>
+<!-- end single footer -->
+<div class="col-md-4 col-sm-4 col-xs-12">
+  <div class="footer-content">
+    <div class="footer-head">
+      <h4>معلومات</h4>
+      <p>
+       لمزيد من المعلومات
+      </p>
+      <div class="footer-contacts ">
+        <p> +213 23 70 17 27<span>:هاتف</span></p>
+        <p> dg@verital.dz<span>:البريد الالكتروني</span></p>
+        <p><span>ساعات العمل </span>  من الساعة 08:00 سا الى غاية 16:00 سا </p>
       </div>
     </div>
+  </div>
+</div>
+<!-- end single footer -->
+<div class="col-md-4 col-sm-4 col-xs- ">
+  <div class="footer-content">
+      <div class="footer-head">
+          <h4>فيس بوك</h4>
+          <div class="flicker-img">
+              <a href="https://web.facebook.com/photo/?fbid=846642007253165&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/404685292_846642687253097_51545038631899646_n.jpg" alt=""></a>
+              <a href="https://web.facebook.com/photo/?fbid=846641637253202&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/404783233_846642427253123_6267874654238108114_n.jpg" alt=""></a>
+              <a href="https://web.facebook.com/photo/?fbid=904145414836157&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/428705684_904534434797255_3724049027745603481_n.jpg" alt=""></a>
+              <a href="https://web.facebook.com/photo/?fbid=904145414836157&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/428706987_904145478169484_2777455238918757462_n.jpg" alt=""></a>
+              <a href="https://web.facebook.com/photo/?fbid=904145414836157&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/428711023_904534151463950_3731252521718504558_n.jpg" alt=""></a>
+              <a href="https://web.facebook.com/photo/?fbid=904145414836157&set=pb.100057221209031.-2207520000"><img class="footer-image" src="img/f/429532026_904534388130593_404600344822068039_n.jpg" alt=""></a>
+          </div>
+      </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="footer-area-bottom">
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-sm-12 col-xs-12">
+  <div class="copyright text-center">
+    <p>
+      &copy; حقوق النشر <strong>  شركة فريطال </strong>كل الحقوق محفوظة - 2024-
+    </p>
   </div>
   
+</div>
+</div>
+</div>
+</div>
+
 </footer>
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
@@ -1454,8 +1391,6 @@ Assistive techniques</p>
 <script src="lib/isotope/isotope.pkgd.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<script src="language.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </body>
 
 </html>

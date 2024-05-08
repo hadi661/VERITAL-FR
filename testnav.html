@@ -23,7 +23,7 @@
   <link href="css/responsive.css" rel="stylesheet">
   <script src="language.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -91,10 +91,6 @@
                   </li>
                  
                 </ul>
-                <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                  <ul class="nav navbar-nav navbar-right" >
-                    <li class="active">
-                    </ul>  
                 <ul class="nav navbar-nav navbar-right">
                   <li class="dropdown hidden-xs">
                       <div id="language-switcher">
@@ -106,18 +102,16 @@
                           </ul>
                       </div>
                   </li> 
-                  <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown visible-xs">
-                        <div id="language-switcher">
-                            <ul id="language-list" class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" style="display: flex;">
-                                <li style="margin-right: 10px;"><a href="index.html" onclick="changeLanguage('fr')">Français</a></li>
-                                <li style="margin-right: 10px;"><a href="EN/index.html" onclick="changeLanguage('en')">English</a></li>
-                                <li style="margin-block: 5px;"><a href="AR/index.html" onclick="changeLanguage('ar')">العربية</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                
+                  <li class="dropdown visible-xs">
+                      <div id="language-switcher">
+                          <ul id="language-list" class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1">
+                              <li><a href="index.html" onclick="changeLanguage('fr')">Français</a></li>
+                              <li><a href="EN/index.html" onclick="changeLanguage('en')">English</a></li>
+                              <li><a href="AR/index.html" onclick="changeLanguage('ar')">العربية</a></li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
               
                   
               <!-- navbar-collapse -->
@@ -1342,6 +1336,7 @@ J’y vois un signe de changement dans le regard des responsables sur cette entr
     });
 </script>
 <script src="language.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </body>
 
 </html>

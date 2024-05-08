@@ -18,7 +18,7 @@
     padding: 20px; /* Padding for content inside div */
     margin: 10px; /* Margin around the div */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(5, 5, 5, 0.514); /* Shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
   }
   
   /* Center align text */
@@ -56,4 +56,36 @@
   div#CEO h2, div#CEO p {
     text-align: center;
   }
+  div#about {
+    background-image: url('../img/bk1.png'); /* Background image */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding for content inside div */
+    margin: 10px; /* Margin around the div */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
   
+  div#team {
+    background-image: url('../img/bk1.png'); /* Background image */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding for content inside div */
+    margin: 10px; /* Margin around the div */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  div#blog {
+    background-image: url('../img/bk1.png'); /* Background image */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding for content inside div */
+    margin: 10px; /* Margin around the div */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  div#Suscrive {
+    background-image: url('../img/bk1.png'); /* Background image */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding for content inside div */
+    margin: 10px; /* Margin around the div */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }

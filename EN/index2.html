@@ -24,7 +24,7 @@
   <link href="css/responsive.css" rel="stylesheet">
   <script src="language.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -50,7 +50,7 @@
           <div class="col-md-12 col-sm-12">
 
             <!-- Navigation -->
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default ">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
@@ -66,40 +66,64 @@
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" >
                   <li class="active">
-                    <a class="page-scroll" href="index.html#home" >ACCUEIL</a>
+                    <a class="page-scroll" href="index.html#home"  style="font-size: smaller;" >ACCUEIL</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="index.html#CEO" >MOT DU PDG </a>
+                    <a class="page-scroll" href="#Aero" style="font-size: smaller;"  >AERO</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="index.html#about">PROFIL</a>
+                    <a class="page-scroll" href="#Marine" style="font-size: smaller;" >MARINE</a>
                   </li>
                   
                   <li>
-                    <a class="page-scroll" href="index.html#services">SERVICES</a>
-                  </li>
-                  
-                  <li>
-                    <a class="page-scroll" href="index.html#Divisions">DIVISIONS</a>
+                    <a class="page-scroll" href="#quality" style="font-size: smaller;" >QUALITY</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="index.html#blog">ACTUALITES</a>
+                    <a class="page-scroll" href="#industry" style="font-size: smaller;" >INDUSTRY</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="contact.html" target="_blank">CONTACT</a>
+                    <a class="page-scroll" href="#Rail" style="font-size: smaller;" >RAIL</a>
                   </li>
-                  <li><div id="language-switcher">
-                    <button id="language-button"></button>
-                    <ul id="language-dropdown">
-                        <li><a href="../index2.html" onclick="changeLanguage('fr')">Français</a></li>
-                        <li><a href="index2.html" onclick="changeLanguage('en')">English</a></li>
-                        <li><a href="../AR/index2.html" onclick="changeLanguage('ar')">العربية</a></li>
-                    </ul>
-                </div></li>
+                  <li>
+                    <a class="page-scroll" href="#Containers" style="font-size: smaller;" >CONTAINERS</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#Elevators" style="font-size: smaller;" >ELEVATORS</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="contact.html" target="_blank" style="font-size: smaller;" >CONTACT</a>
+                  </li>
+                 
                 </ul>
-              </div>             <!-- navbar-collapse -->
+                <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                  <ul class="nav navbar-nav navbar-right" >
+                    <li class="active">
+                    </ul>  
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown hidden-xs">
+                      <div id="language-switcher">
+                          <button id="language-button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                          <ul id="language-dropdown" class="dropdown-menu">
+                              <li><a href="../index2.html" onclick="changeLanguage('fr')">Français</a></li>
+                              <li><a href="index2.html" onclick="changeLanguage('en')">English</a></li>
+                              <li><a href="../AR/index2.html" onclick="changeLanguage('ar')">العربية</a></li>
+                          </ul>
+                      </div>
+                  </li> 
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown visible-xs">
+                        <div id="language-switcher">
+                            <ul id="language-list" class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" style="display: flex;">
+                                <li style="margin-right: 10px;"><a href="../index2.html" onclick="changeLanguage('fr')">Français</a></li>
+                                <li style="margin-right: 10px;"><a href="index2.html" onclick="changeLanguage('en')">English</a></li>
+                                <li style="margin-block: 5px;"><a href="../AR/index2.html" onclick="changeLanguage('ar')">العربية</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
             </nav>
             <!-- END: Navigation -->
            
@@ -1231,27 +1255,45 @@ Assistive techniques</p>
   <div class="clearfix"></div>
   <!--end elv area-->
   
-  <!-- Start Suscrive Area -->
-  
-  <div class="slider-container">
-    <div class="slider">
-      <div class="slide">
-        <img src="img/1/1.png" alt="" />
-        <img src="img/1/2.png" alt="" />
-        <img src="img/1/24-225x202.png" alt="" />
-        <img src="img/1/25-240x202.png" alt="" />
-        <img src="img/1/27-231x202.png" alt="" />
-        <img src="img/1/29-225x202.png" alt="" />
-        <img src="img/1/30-320x202.png" alt="" />
-        <!-- Duplicate the first image to create a loop -->
-        <img src="img/1/1.png" alt="" />
-      </div>
-    </div>
+   <!-- Start Suscrive Area -->
+   <div id="Suscrive" class="section-headline text-center">
+    <h2>Trusted by the biggest brands</h2>
   </div>
-  
- 
-  <!-- End Suscrive Area -->
-  <!-- Start contact Area -->
+<div class="slider-container">
+<div class="slider">
+<div class="slide">
+<img src="img/1/1.png" alt="" />
+<img src="img/1/2.png" alt="" />
+<img src="img/1/24-225x202.png" alt="" />
+<img src="img/1/25-240x202.png" alt="" />
+<img src="img/1/27-231x202.png" alt="" />
+<img src="img/1/29-225x202.png" alt="" />
+<img src="img/1/30-320x202.png" alt="" />
+<img src="img/client/1.png" alt="" />
+<img src="img/client/3.png" alt="" />
+<img src="img/client/4.png" alt="" /><img src="img/client/5.png" alt="" />
+<img src="img/client/6.png" alt="" /><img src="img/client/7.png" alt="" />
+<img src="img/client/8.png" alt="" /><img src="img/client/9.png" alt="" />
+<img src="img/client/10.png" alt="" /><img src="img/client/11.png" alt="" />
+<img src="img/client/12.png" alt="" /><img src="img/client/13.png" alt="" />
+<img src="img/client/14.png" alt="" /><img src="img/client/15.png" alt="" />
+<img src="img/client/16.png" alt="" /><img src="img/client/17.png" alt="" />
+<img src="img/client/18.png" alt="" /><img src="img/client/19.png" alt="" />
+<img src="img/client/20.png" alt="" /><img src="img/client/21.png" alt="" />
+<img src="img/client/22.png" alt="" /><img src="img/client/23.png" alt="" />
+<img src="img/client/24.png" alt="" /><img src="img/client/25.png" alt="" />
+<img src="img/client/26.png" alt="" /><img src="img/client/27.png" alt="" />
+<img src="img/client/28.png" alt="" /><img src="img/client/29.png" alt="" />
+<img src="img/client/30.png" alt="" />
+<img src="img/client/31.png" alt="" /><img src="img/client/32.png" alt="" /> <!-- Duplicate the first image to create a loop -->
+<img src="img/1/1.png" alt="" />
+</div>
+</div>
+</div>
+
+
+<!-- End Suscrive Area -->
+<!-- Start contact Area -->
   <div id="contact" class="contact-area">
     <div class="contact-inner area-padding">
       <div class="contact-overly"></div>
@@ -1310,7 +1352,7 @@ Assistive techniques</p>
           <!-- Start Google Map -->
           <div class="col-md-6 col-sm-6 col-xs-12">
             <!-- Start Map -->
-              <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21888.55382199453!2d3.0606491!3d36.7146951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad0afd9463ab%3A0xa88e2f6cd6697730!2sVERITAL%20-%20Direction%20G%C3%A9n%C3%A9rale!5e1!3m2!1sen!2sdz!4v1714042568588!5m2!1sen!2sdz" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <!-- End Map -->
           </div>
           <!-- End Google Map -->
@@ -1419,7 +1461,7 @@ Assistive techniques</p>
           </div>
         </div>
       </div>
-    
+    </div>
     <div class="footer-area-bottom">
       <div class="container">
         <div class="row">
@@ -1457,8 +1499,6 @@ Assistive techniques</p>
   <script src="contactform/contactform.js"></script>
 
   <script src="js/main.js"></script>
-  
- 
 </body>
 
 </html>

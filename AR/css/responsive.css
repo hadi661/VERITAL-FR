@@ -311,3 +311,22 @@
     padding: 8px 20px;
   }
 }
+/*open dropdowns on xs*/
+@media (max-width: 767px) {
+   .open .dropdown-menu {
+      position: static;
+      float:inline-end;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+  }
+
+  .navbar-collapse .open .dropdown-menu > li {
+      display: inline-block;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}

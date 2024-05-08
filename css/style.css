@@ -2177,62 +2177,69 @@ span.email-notes {
  .End CSS
 ----------------------------------------*/
 #language-switcher {
-  position: relative;
-  display: block;
+  position:inherit;
+  display: grid;
   top: 15px;
-
 }
 
 #language-button {
-  
   width: 30px;
   height: 30px;
   border-radius: 80%;
   max-height: 65px;
-  display: block; /* Ensure the image is block-level */
-  margin: auto; 
-  background-image: url("../img/lang.png");  /* Replace with your flag image path */
+  display: inline-block;
+  margin: auto;
+  background-image: url("../img/lang.png");
   background-size: cover;
   background-position: center;
   cursor: pointer;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);  /* Subtle 3D effect */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   display: inline-block;
   transition: all 0.4s ease 0s;
   z-index: 222;
 }
 
 #language-button:hover {
-  transform: scale(1.1);  /* Slight zoom on hover */
+  transform: scale(1.1);
 }
 
 #language-dropdown {
   position: absolute;
-  top: 100%;  /* Position below the button */
-  left: 0;
-  background-color: #fff;
+  top: 100%;
+  background-color: #2499a1a9;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+  box-shadow: 0 2px 5px rgba(247, 224, 224, 0.281);
   list-style: none;
-  padding: 0;
-  display: none;  /* Initially hidden */
+  padding: 0px 13px;
+  display: none;
 }
 
 #language-dropdown li {
-  padding: 5px 10px 10px;
+  padding: 5px 5px 5px;
 }
 
 #language-dropdown a {
-  text-decoration: none;
-  color: #333;
+  text-decoration-color: white;
+  color: #fff8f8;
   transition: color 0.2s ease;
 }
 
 #language-dropdown a:hover {
-  color: #007bff;  /* Highlight on hover */
+  color: #007bff;
 }
 
 #language-switcher:hover #language-dropdown {
-  display: block;  /* Show dropdown on button hover */
+  display: list-item;
+}
+
+/* Move the language button to the right for Arabic */
+[dir="rtl"] #language-switcher {
+  float: right;
+}
+
+/* Move the language button to the left for English and French */
+[dir="ltr"] #language-switcher {
+  float: left;
 }
 
 
