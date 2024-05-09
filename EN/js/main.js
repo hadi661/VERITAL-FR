@@ -24,7 +24,18 @@
       s.removeClass("stick");
     }
   });
-
+  var languageDropdown = $("#language-dropdown");
+  var pos = languageDropdown.position(); // Get the initial position of the language dropdown
+  
+  $(window).on('scroll', function() {
+      var windowpos = $(window).scrollTop();
+      if (windowpos > 300) { // Check if scrolled past 300 pixels
+          languageDropdown.addClass("scroll"); // Add the scroll class
+      } else {
+          languageDropdown.removeClass("scroll"); // Remove the scroll class
+      }
+  });
+  
   /*----------------------------
    Navbar nav
   ------------------------------ */
@@ -292,8 +303,8 @@
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, {
-                duration: 3000, // Adjust the duration as needed
-                easing: 'easeInOutCubic', // Use a custom easing function
+              duration: 3000, // Adjust the duration as needed
+              easing: 'easeInOutCubic', // Use a custom easing function
                 complete: function(){
                     // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;

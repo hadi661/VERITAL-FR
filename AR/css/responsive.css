@@ -313,9 +313,9 @@
 }
 /*open dropdowns on xs*/
 @media (max-width: 767px) {
-   .open .dropdown-menu {
+  .navbar-collapse .open .dropdown-menu {
       position: static;
-      float:inline-end;
+      float: none;
       width: auto;
       margin-top: 0;
       background-color: transparent;
@@ -324,7 +324,7 @@
   }
 
   .navbar-collapse .open .dropdown-menu > li {
-      display: inline-block;
+      display: block;
   }
 }
 html {

@@ -1,0 +1,21 @@
+{
+  "name": "verital-fr",
+  "version": "1.0.0",
+  "description": "verital website",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.4",
+    "mysql": "^2.18.1"
+  }
+}

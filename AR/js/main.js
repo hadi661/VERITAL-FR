@@ -24,7 +24,18 @@
       s.removeClass("stick");
     }
   });
-
+  var languageDropdown = $("#language-dropdown");
+  var pos = languageDropdown.position(); // Get the initial position of the language dropdown
+  
+  $(window).on('scroll', function() {
+      var windowpos = $(window).scrollTop();
+      if (windowpos > 300) { // Check if scrolled past 300 pixels
+          languageDropdown.addClass("scroll"); // Add the scroll class
+      } else {
+          languageDropdown.removeClass("scroll"); // Remove the scroll class
+      }
+  });
+  
   /*----------------------------
    Navbar nav
   ------------------------------ */

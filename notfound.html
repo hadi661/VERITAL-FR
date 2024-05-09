@@ -40,23 +40,36 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <!-- Your header content goes here -->
-        <h1>Header</h1>
-    </header>
+  
 
     <!-- Content -->
     <div class="content">
-        <h1>404 Not Found</h1>
-        <p>Oops! It looks like you've hit a dead end. The page you're looking for might have been moved, deleted, or doesn't exist.</p>
-        <p>Go back to <a href="/">homepage</a> or use the search bar.</p>
+        <h1 id="title">404 Not Found</h1>
+        <p id="message">Oops! It looks like you've hit a dead end. The page you're looking for might have been moved, deleted, or doesn't exist.</p>
+        <p id="options">Go back to <a href="/">homepage</a> or use the search bar.</p>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <!-- Your footer content goes here -->
-        <h1>Footer</h1>
-    </footer>
+   
+
+    <!-- JavaScript for translation -->
+    <script>
+        // Translation function for French
+        function translateToFrench() {
+            document.getElementById("title").innerText = "404 Non trouvé";
+            document.getElementById("message").innerText = "Oups ! Il semble que vous avez atteint une impasse. La page que vous recherchez a peut-être été déplacée, supprimée ou n'existe pas.";
+            document.getElementById("options").innerText = "Retour à la page d'accueil ou utilisez la barre de recherche.";
+        }
+
+        // Translation function for Arabic
+        function translateToArabic() {
+            document.getElementById("title").innerText = "404 غير موجود";
+            document.getElementById("message").innerText = "عذرا! يبدو أنك واجهت طريقًا مسدودًا. قد تم نقل الصفحة التي تبحث عنها أو حذفها أو أنها غير موجودة.";
+            document.getElementById("options").innerText = "العودة إلى الصفحة الرئيسية أو استخدام شريط البحث.";
+        }
+
+        // Call the appropriate translation function based on user's language preference
+        // Here I'm just calling the French translation function as an example, you can modify it to determine the language dynamically
+        translateToFrench(); // You can change this to `translateToArabic()` to display in Arabic
+    </script>
 </body>
 </html>
