@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+    <title>Error Page</title>
     <style>
         body {
             margin: 0;
@@ -37,6 +37,15 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* Media query for extra-small screens */
+        @media only screen and (max-width: 575.98px) {
+            body {
+                background-image: url('img/notfoundxs.jpg');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
     </style>
 </head>
 <body>
@@ -44,32 +53,73 @@
 
     <!-- Content -->
     <div class="content">
-        <h1 id="title">404 Not Found</h1>
-        <p id="message">Oops! It looks like you've hit a dead end. The page you're looking for might have been moved, deleted, or doesn't exist.</p>
-        <p id="options">Go back to <a href="/">homepage</a> or use the search bar.</p>
+        <h1 id="title"></h1>
+        <p id="message"></p>
+        <p id="options"></p>
     </div>
 
    
 
     <!-- JavaScript for translation -->
     <script>
-        // Translation function for French
-        function translateToFrench() {
-            document.getElementById("title").innerText = "404 Non trouvé";
-            document.getElementById("message").innerText = "Oups ! Il semble que vous avez atteint une impasse. La page que vous recherchez a peut-être été déplacée, supprimée ou n'existe pas.";
-            document.getElementById("options").innerText = "Retour à la page d'accueil ou utilisez la barre de recherche.";
+        // Function to set error page content based on language
+        function setErrorPageContent(lang) {
+            var title, message, options;
+            switch (lang) {
+                case 'fr':
+                    title = "404 Non trouvé";
+                    message = "Oups ! Il semble que vous avez atteint une impasse. La page que vous recherchez a peut-être été déplacée, supprimée ou n'existe pas.";
+                    options = "Retour à la page d'accueil ou utilisez la barre de recherche.";
+                    break;
+                case 'ar':
+                    title = "404 غير موجود";
+                    message = "عذرا! يبدو أنك واجهت طريقًا مسدودًا. قد تم نقل الصفحة التي تبحث عنها أو حذفها أو أنها غير موجودة.";
+                    options = "العودة إلى الصفحة الرئيسية أو استخدام شريط البحث.";
+                    break;
+                case 'en':
+                    title = "400 Bad Request";
+                    message = "Oops! The server couldn't understand your request due to invalid syntax.";
+                    options = "Please check your input and try again.";
+                    break;
+                case 'es':
+                    title = "401 Unauthorized";
+                    message = "Oops! You are not authorized to view this page.";
+                    options = "Please log in with proper credentials.";
+                    break;
+                case 'de':
+                    title = "403 Forbidden";
+                    message = "Oops! Access to this page is forbidden.";
+                    options = "Please contact the administrator for assistance.";
+                    break;
+                case 'ru':
+                    title = "500 Internal Server Error";
+                    message = "Oops! Something went wrong on the server.";
+                    options = "Please try again later.";
+                    break;
+                case 'zh':
+                    title = "503 Service Unavailable";
+                    message = "Oops! The server is temporarily unable to handle the request.";
+                    options = "Please try again later or contact the administrator.";
+                    break;
+                default:
+                    // Default to English
+                    title = "404 Not Found";
+                    message = "Oops! It looks like you've hit a dead end. The page you're looking for might have been moved, deleted, or doesn't exist.";
+                    options = "Go back to homepage or use the search bar.";
+                    break;
+            }
+            document.getElementById("title").innerText = title;
+            document.getElementById("message").innerText = message;
+            document.getElementById("options").innerText = options;
         }
 
-        // Translation function for Arabic
-        function translateToArabic() {
-            document.getElementById("title").innerText = "404 غير موجود";
-            document.getElementById("message").innerText = "عذرا! يبدو أنك واجهت طريقًا مسدودًا. قد تم نقل الصفحة التي تبحث عنها أو حذفها أو أنها غير موجودة.";
-            document.getElementById("options").innerText = "العودة إلى الصفحة الرئيسية أو استخدام شريط البحث.";
-        }
+        // Detect user's language preference
+        var userLang = navigator.language || navigator.userLanguage;
+        // Extract the first two characters to get the language code (e.g., 'en', 'fr', 'ar')
+        var langCode = userLang.substr(0, 2);
 
-        // Call the appropriate translation function based on user's language preference
-        // Here I'm just calling the French translation function as an example, you can modify it to determine the language dynamically
-        translateToFrench(); // You can change this to `translateToArabic()` to display in Arabic
+        // Set error page content based on user's language preference
+        setErrorPageContent(langCode);
     </script>
 </body>
 </html>
