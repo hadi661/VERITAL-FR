@@ -1,0 +1,168 @@
+[{
+  "_id": {
+    "$oid": "663ca4f50306e469d53e2883"
+  },
+  "page": "AÉRONAUTIQUES",
+  "services": [
+    {
+      "name": "Service 1",
+      "description": "Description of Service 1 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 2",
+      "description": "Description of Service 2 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 3",
+      "description": "Description of Service 3 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 4",
+      "description": "Description of Service 4 for AÉRONAUTIQUES"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663ca4f50306e469d53e2884"
+  },
+  "page": "MARINE",
+  "services": [
+    {
+      "name": "Service 1",
+      "description": "Description of Service 1 for MARINE"
+    },
+    {
+      "name": "Service 2",
+      "description": "Description of Service 2 for MARINE"
+    },
+    {
+      "name": "Service 3",
+      "description": "Description of Service 3 for MARINE"
+    },
+    {
+      "name": "Service 4",
+      "description": "Description of Service 4 for MARINE"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663ca4f50306e469d53e2885"
+  },
+  "page": "CONTRÔLE DE QUALITÉ",
+  "services": [
+    {
+      "name": "Service 1",
+      "description": "Description of Service 1 for MARINE"
+    },
+    {
+      "name": "Service 2",
+      "description": "Description of Service 2 for MARINE"
+    },
+    {
+      "name": "Service 3",
+      "description": "Description of Service 3 for MARINE"
+    },
+    {
+      "name": "Service 4",
+      "description": "Description of Service 4 for MARINE"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663ca4f50306e469d53e2886"
+  },
+  "page": "INDUSTRIE",
+  "services": [
+    {
+      "name": "Service 1",
+      "description": "Description of Service 1 for MARINE"
+    },
+    {
+      "name": "Service 2",
+      "description": "Description of Service 2 for MARINE"
+    },
+    {
+      "name": "Service 3",
+      "description": "Description of Service 3 for MARINE"
+    },
+    {
+      "name": "Service 4",
+      "description": "Description of Service 4 for MARINE"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663ca4f50306e469d53e2887"
+  },
+  "page": "TRANSPORT FERROVIAIRE ET GUIDE",
+  "services": [
+    {
+      "name": "Service 1",
+      "description": "Description of Service 1 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 2",
+      "description": "Description of Service 2 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 3",
+      "description": "Description of Service 3 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 4",
+      "description": "Description of Service 4 for AÉRONAUTIQUES"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663ca4f50306e469d53e2888"
+  },
+  "page": "CONTROLE ET VERIFICATION DES CONTENEURS",
+  "services": [
+    {
+      "name": "Service 1",
+      "description": "Description of Service 1 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 2",
+      "description": "Description of Service 2 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 3",
+      "description": "Description of Service 3 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 4",
+      "description": "Description of Service 4 for AÉRONAUTIQUES"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663ca4f50306e469d53e2889"
+  },
+  "page": " INSPECTION TECHNIQUE DES ASCENSEURS",
+  "services": [
+    {
+      "name": "Service 1",
+      "description": "Description of Service 1 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 2",
+      "description": "Description of Service 2 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 3",
+      "description": "Description of Service 3 for AÉRONAUTIQUES"
+    },
+    {
+      "name": "Service 4",
+      "description": "Description of Service 4 for AÉRONAUTIQUES"
+    }
+  ]
+}]

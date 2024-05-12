@@ -374,6 +374,7 @@ div#preloader {
   border: medium none;
   border-radius: 0;
   padding: 25px 0px;
+  z-index: 9999;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -2243,6 +2244,7 @@ span.email-notes {
 }
 
 #language-dropdown.scroll {
-  background-color: rgba(44, 43, 43, 0.349); /* Color when scrolled */
+  
+    background-color: rgba(37, 41, 41, 0.349); /* Color when scrolled */
 }
 

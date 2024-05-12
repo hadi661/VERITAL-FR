@@ -14,72 +14,95 @@
   /*---------------------
    TOP Menu Stick
   --------------------- */
-  var s = $("#sticker");
-  var pos = s.position();
-  $(window).on('scroll', function() {
-    var windowpos = $(window).scrollTop() > 300;
-    if (windowpos > pos.top) {
-      s.addClass("stick");
-    } else {
-      s.removeClass("stick");
-    }
-  });
-  var languageDropdown = $("#language-dropdown");
-  var pos = languageDropdown.position(); // Get the initial position of the language dropdown
+  $(document).ready(function() {
+    var s = $("#sticker");
+    var pos = s.position();
   
-  $(window).on('scroll', function() {
+    $(window).on('scroll', function() {
       var windowpos = $(window).scrollTop();
-      if (windowpos > 300) { // Check if scrolled past 300 pixels
-          languageDropdown.addClass("scroll"); // Add the scroll class
+      if (windowpos > pos.top) {
+        s.addClass("stick");
       } else {
-          languageDropdown.removeClass("scroll"); // Remove the scroll class
+        s.removeClass("stick");
       }
+    });
+  
+    // Navbar click event to remove active class
+    var main_menu = $(".main-menu ul.navbar-nav li");
+    main_menu.on('click', function() {
+      main_menu.removeClass("active");
+      $(this).addClass("active");
+    });
+  
+    // Smooth scrolling for navbar links
+    $('.navbar-nav li a').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - 70 // Adjust the offset as needed
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      }
+    });
+  
+    // Smooth scrolling for language dropdown links
+    $('#language-dropdown li a').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      }
+    });
+  
+    // Smooth scrolling for language list links (visible-xs)
+    $('#language-list li a').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function() {
+          window.location.hash = hash;
+        });
+      }
+    });
+  
+    // Initialize WOW.js
+    new WOW().init();
+  
+    // Close collapsed navbar on click
+    $(".navbar-collapse a").on('click', function() {
+      $(".navbar-collapse.collapse").removeClass('in');
+    });
+  
+    // Nivo Slider initialization
+    $('#ensign-nivoslider').nivoSlider({
+      effect: 'random',
+      slices: 15,
+      boxCols: 12,
+      boxRows: 8,
+      animSpeed: 500,
+      pauseTime: 5000,
+      startSlide: 0,
+      directionNav: true,
+      controlNavThumbs: false,
+      pauseOnHover: true,
+      manualAdvance: false,
+    });
+  
+    // Scrollspy initialization
+    $('body').scrollspy({
+      target: '.navbar-collapse',
+      offset: 80
+    });
   });
   
-  /*----------------------------
-   Navbar nav
-  ------------------------------ */
-  var main_menu = $(".main-menu ul.navbar-nav li ");
-  main_menu.on('click', function() {
-    main_menu.removeClass("active");
-    $(this).addClass("active");
-  });
-
-  /*----------------------------
-   wow js active
-  ------------------------------ */
-  new WOW().init();
-
-  $(".navbar-collapse a").on('click', function() {
-    $(".navbar-collapse.collapse").removeClass('in');
-  });
-
-  //---------------------------------------------
-  //Nivo slider
-  //---------------------------------------------
-  $('#ensign-nivoslider').nivoSlider({
-    effect: 'random',
-    slices: 15,
-    boxCols: 12,
-    boxRows: 8,
-    animSpeed: 500,
-    pauseTime: 5000,
-    startSlide: 0,
-    directionNav: true,
-    controlNavThumbs: false,
-    pauseOnHover: true,
-    manualAdvance: false,
-  });
-
-  /*----------------------------
-   Scrollspy js
-  ------------------------------ */
-  var Body = $('body');
-  Body.scrollspy({
-    target: '.navbar-collapse',
-    offset: 80
-  });
-
   /*---------------------
     Venobox
   --------------------- */

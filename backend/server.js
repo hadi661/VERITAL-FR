@@ -1,27 +1,85 @@
-// Importing required modules
+// server.js
+
 const express = require('express');
-// Import Mongoose module
-const mongoose = require('mongoose');
+const mongoose = require('./dbs');
+const Division = require('./models/Division'); // Import the Division model
+const newsRoutes = require('./routes/News');
+const contactRoutes = require('./routes/Contact');
+const Service = require('./models/Service');
 
-// Creating an Express application
 const app = express();
+const port = process.env.PORT || 5010;
 
-// Middleware to parse JSON bodies
 app.use(express.json());
 
-// Define a basic route
 app.get('/', (req, res) => {
   res.send('Hello from the backend!');
 });
 
-// Define the Service schema
-const serviceSchema = new mongoose.Schema({
-  title: { type: String, required: true },
-  description: { type: String }
+// Route to create a new division
+app.post('/divisions', (req, res) => {
+  const newDivision = new Division(req.body);
+  newDivision.save()
+    .then(division => {
+      res.json(division);
+    })
+    .catch(error => {
+      res.status(400).json({ error: error.message });
+    });
 });
 
-// Create the Service model
-const Service = mongoose.model('Service', serviceSchema);
+// Route to get all divisions
+app.get('/divisions', (req, res) => {
+  Division.find()
+    .then(divisions => {
+      res.json(divisions);
+    })
+    .catch(error => {
+      res.status(500).json({ error: error.message });
+    });
+});
+
+// Route to get a single division by ID
+app.get('/divisions/:id', (req, res) => {
+  Division.findById(req.params.id)
+    .then(division => {
+      if (!division) {
+        return res.status(404).json({ error: 'Division not found' });
+      }
+      res.json(division);
+    })
+    .catch(error => {
+      res.status(500).json({ error: error.message });
+    });
+});
+
+// Route to update a division by ID
+app.put('/divisions/:id', (req, res) => {
+  Division.findByIdAndUpdate(req.params.id, req.body, { new: true })
+    .then(division => {
+      if (!division) {
+        return res.status(404).json({ error: 'Division not found' });
+      }
+      res.json(division);
+    })
+    .catch(error => {
+      res.status(400).json({ error: error.message });
+    });
+});
+
+// Route to delete a division by ID
+app.delete('/divisions/:id', (req, res) => {
+  Division.findByIdAndDelete(req.params.id)
+    .then(division => {
+      if (!division) {
+        return res.status(404).json({ error: 'Division not found' });
+      }
+      res.json({ message: 'Division deleted successfully' });
+    })
+    .catch(error => {
+      res.status(400).json({ error: error.message });
+    });
+});
 
 // Route to create a new service
 app.post('/services', (req, res) => {
@@ -88,17 +146,12 @@ app.delete('/services/:id', (req, res) => {
     });
 });
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/company_website', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => {
-  console.log('Connected to MongoDB');
-  // Start the server after connecting to MongoDB
-  const port = process.env.PORT || 5003;
-  app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
-}).catch((error) => {
-  console.error('Error connecting to MongoDB:', error);
+// Use the News routes
+app.use('/news', newsRoutes);
+
+// Use the Contact routes
+app.use('/contacts', contactRoutes);
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
