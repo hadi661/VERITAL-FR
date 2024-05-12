@@ -2248,3 +2248,17 @@ span.email-notes {
     background-color: rgba(37, 41, 41, 0.349); /* Color when scrolled */
 }
 
+/*---------------------------
+backend styling -needs work 
+--------------------------*/
+/*---------------------------
+backend styling see more button 
+--------------------------*/
+.hidden {
+  display: none;
+}
+
+.show-more-button {
+  margin-top: 10px;
+  cursor: pointer;
+}

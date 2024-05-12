@@ -339,5 +339,30 @@
 
 })(jQuery);
 
+document.addEventListener('DOMContentLoaded', function () {
+  const descriptionContainer = document.querySelector('.description-container');
+  const showMoreButton = descriptionContainer.querySelector('.show-more-button');
+  const fullDescription = descriptionContainer.querySelector('.full-description');
+  const maxLength = 250;
 
+  // Function to toggle visibility of full description
+  function toggleDescriptionVisibility() {
+    fullDescription.classList.toggle('hidden');
+    if (fullDescription.classList.contains('hidden')) {
+      showMoreButton.textContent = 'En savoir plus';
+    } else {
+      showMoreButton.textContent = 'En savoir moins';
+    }
+  }
 
+  // Event listener for the "Show More" button
+  showMoreButton.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the default behavior (page reload)
+    toggleDescriptionVisibility();
+  });
+
+  // Check if description exceeds maximum length and show more button
+  if (descriptionContainer.querySelector('.short-description').textContent.length > maxLength) {
+    showMoreButton.style.display = 'block';
+  }
+});

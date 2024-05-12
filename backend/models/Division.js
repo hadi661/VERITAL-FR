@@ -3,16 +3,18 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const divisionSchema = new Schema({
+const divisionSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true
+    required: true,
+    unique: true,
+    trim: true
   },
-  description: String,
-  createdAt: {
-    type: Date,
-    default: Date.now
-  }
+  description: {
+    type: String,
+    required: true,
+    maxlength: 250
+  },
 });
 
 const Division = mongoose.model('Division', divisionSchema);
