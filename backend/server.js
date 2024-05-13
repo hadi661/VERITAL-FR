@@ -6,18 +6,13 @@ const divisionsRoutes = require('./routes/Divisions');
 const servicesRoutes = require('./routes/services');
 const errorHandler = require('./middleware/errorHandler'); // Import the error handling middleware
 const bodyParser = require('body-parser'); // Example middleware for parsing request bodies
-const compression = require('compression'); // Middleware for compressing responses
-const helmet = require('helmet'); // Middleware for enhancing security headers
-const cors = require('cors'); // Middleware for enabling Cross-Origin Resource Sharing (CORS)
 
 const app = express();
 const port = process.env.PORT || 5010;
 
 // Middleware setup
 app.use(bodyParser.json()); // Parse JSON request bodies
-app.use(compression()); // Compress responses
-app.use(helmet()); // Add security headers
-app.use(cors()); // Enable CORS
+
 
 // Routes setup
 app.use('/news', newsRoutes); // Use the News routes
