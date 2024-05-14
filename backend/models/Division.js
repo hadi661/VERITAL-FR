@@ -15,6 +15,7 @@ const divisionSchema = new mongoose.Schema({
     required: true,
     maxlength: 250
   },
+  keywords: [String] // Array of keywords associated with the division
 });
 
 const Division = mongoose.model('Division', divisionSchema);

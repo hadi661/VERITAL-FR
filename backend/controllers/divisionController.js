@@ -61,3 +61,15 @@ exports.deleteDivision = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
+
+// Controller function to search divisions by keyword
+exports.searchDivisions = async (req, res) => {
+  try {
+    const keyword = req.query.q;
+    // Perform a dynamic search for divisions
+    const searchResults = await Division.find({ $text: { $search: keyword } });
+    res.json(searchResults);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

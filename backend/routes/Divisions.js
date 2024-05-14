@@ -18,4 +18,7 @@ router.put('/:id', divisionController.updateDivision);
 // Route to delete a division by ID
 router.delete('/:id', divisionController.deleteDivision);
 
+// Route for searching divisions
+router.get('/search', divisionController.searchDivisions);
+
 module.exports = router;

@@ -1,2 +1,0 @@
-# Verital
-verital website 
